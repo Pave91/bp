@@ -14,6 +14,13 @@
 \usepackage[acronym,nonumberlist,toc,numberedsection=autolabel,footnote]{glossaries}
 \iflanguage{czech}{\renewcommand*{\acronymname}{Seznam pou{\v z}it{\' y}ch zkratek}}{}
 \makeglossaries
+\makeatletter
+\defglsdisplayfirst[\acronymtype]{%
+  \firstacronymfont{#1}#4%
+    \protect\footnote{%
+      \glslink[\@gls@link@opts]{\@gls@link@label}{#1}~#2.}}%
+\makeatother
+
 \usepackage{hyperref}
 
 \newcommand{\tg}{\mathop{\mathrm{tg}}} %cesky tangens
@@ -39,7 +46,18 @@
 \hyphenation{lay-outu}
 \newacronym{CVUT}{{\v C}VUT}{{\v C}esk{\' e} vysok{\' e} u{\v c}en{\' i} technick{\' e} v Praze}
 \newacronym{FIT}{FIT}{Fakulta informa{\v c}n{\' i}ch technologi{\' i}}
-\newacronym{CSS}{CSS}{Cascading Style Sheets. Jazyk navržený W3C organizací představuje jednoduchý mechanismus přidávání stylů (např. fontů, barev, mezer) do webových dokumentů.}
+
+\newacronym{CSS}{CSS}{(Cascading Style Sheets). Jazyk navržený W3C organizací představuje jednoduchý mechanismus přidávání stylů (např. fontů, barev, mezer) do webových dokumentů}
+\newacronym{HTML}{HTML}{(HyperText Markup Language)}
+\newacronym{W3C}{W3C}{(World Wide Web Consortium)}
+\newacronym{DSL}{DSL}{(Dynamic Stylesheet language)}
+\newacronym{IE}{IE}{(Internet Explorer)}
+\newacronym{UI}{UI}{(User interface)}
+\newacronym{YAML}{YAML}{(YAML Ain't Markup Language)}
+\newacronym{PHP}{PHP}{(PHP: Hypertext Preprocessor) znamená hypertextový preprocesor. Jedná se o~skriptovací jazyk, který je používán k vývoji webových stránek. PHP se provádí na straně serveru}
+\newacronym{Sass}{Sass}{(Syntactically Awesome Stylesheets)}
+\newacronym{CMS}{CMS}{(Content Management System) slouží pro správu webového obsahu}
+
 
 \begin{introduction}
 	Bakalářská práce má za cíl informovat čtenáře o~pokročilých technologiích v oblasti kódování webového rozhraní. Téma reaguje na její aktuální situaci a podrobně se zabývá souvisejícími problémy. Vzniklo za účelem ujasnění si již získaných zkušeností a~jejich dalšího rozvoje. 
@@ -53,7 +71,7 @@ Poslední část práce je zaměřena na vývojářskou obec CSS preprocesorů. 
 \end{introduction}
 
 \chapter{Vymezení pojmů}
-K celistvému pochopení tématu je nezbytné vysvětlit určité termíny, tak aby se čtenář v~tématu neztrácel. Tyto klíčové pojmy začínajícím vývojářům nemusí být zcela jasné. 
+K celistvému pochopení tématu je nezbytné vysvětlit určité termíny tak, aby se čtenář v~tématu neztrácel. Tyto klíčové pojmy začínajícím vývojářům nemusí být zcela jasné. 
 
 
 \section{CSS framework}
@@ -61,23 +79,23 @@ K celistvému pochopení tématu je nezbytné vysvětlit určité termíny, tak 
 
 Framework obecně slouží jako konceptuální struktura pro budování něčeho užitečného. Jinými slovy se jedná o~univerzální základ, na němž lze stavět složitější prvky nebo vyíjet svůj další vlastní framework. 
 
-\gls{CSS} frameworkem se dnes rozumí knihovna CSS souborů, které se používají k~vývoji webových stránek založených na HTML a~CSS. CSS framework obvykle poskytuje CSS styly a~vlastnosti pro:
+\gls{CSS} frameworkem se dnes rozumí knihovna \gls{CSS} souborů, které se používají k~vývoji webových stránek založených na \gls{HTML} a~\gls{CSS}. \gls{CSS} framework obvykle poskytuje \gls{CSS} styly a~vlastnosti pro:
 
 \begin{itemize}
- \item typografii\footnote{Obor zabývající se písmem, jeho výběrem, použitím a~sazbou.}
- \item layout\footnote{Označení pro schéma či rozmístění objektů, v~případě webových stránek jde o~prvky na stránce.} -- typicky v~tzv. mřížkovém systému
- \item resetování vlastností prohlížečů\cite{fram}
+ \item typografii\footnote{Obor zabývající se písmem, jeho výběrem, použitím a~sazbou.},
+ \item layout\footnote{Označení pro schéma či rozmístění objektů, v~případě webových stránek jde o~prvky na stránce.} -- typicky v~tzv. mřížkovém systému,
+ \item resetování vlastností prohlížečů\cite{fram}.
 \end{itemize}
 Kodér webových stránek tak nemusí od samého základu vytvářet webové rozhraní, jednoduše využije standardní styly např. pro zaoblené rohy objektů. 
 
 \section{CSS preprocesor}
 
-Jedná se o~dynamický jazyk (v~anglické terminologii Dynamic Stylesheet Language, dále DSL). Umožňuje dynamické programování v~samotném CSS. DSL se blíží více programování, takže programátoři toto ulehčení velice vítají.
+Jedná se o~dynamický jazyk \gls{DSL}. Umožňuje dynamické programování v~samotném \gls{CSS}. \gls{DSL} se blíží více programování, takže programátoři toto ulehčení velice vítají.
 
 Výhoda dynamického jazyka tkví v~přínosu objektivně orientovaného zápisu kódu (kódu rozděleného na funkce, s~využitím proměnných, dokonce i~dědičnosti). Lze používat také matematické binární operace (sčítání, odčítání, násobení, dělení) mezi různými jednotkami i~v~šestnáctkové soustavě a~lze používat i~uzávorkování. 
 
 
-\noindent Př.: Kód napsaný v~LESS\footnote{Webová stránka preprocesoru LESS \url{http://lesscss.org/}} využívající proměnných, zanořování, barevné funkce a~matematických operací.
+\noindent Př.: Kód napsaný v~LESS\footnote{Webová stránka preprocesoru LESS \url{http://lesscss.org/}} využívající proměnné, zanořování, barevné funkce a~matematické operace.
 \scriptsize
 \begin{verbatim}
 
@@ -107,18 +125,18 @@ Stylování webového rozhraní je neodmyslitelným denním chlebem kodérů a~w
 
 \section{Současný stav problematiky}
 
-Účelem práce je srovnání CSS frameworků na hlubší úrovni než jednoduché tabulky na stránkách Wikipedie. V tabulkách tohoto typu je shrnuto pouze, co framework obsahuje či ne. Další tabulky ukazují, který framework funguje ve kterém prohlížeči, zdali mají podporu nějakého z preprocesorů a~pod jakou jsou licencí\footnote{Ke shlédnutí např. na \url{http://usablica.github.com/front-end-frameworks/compare.html}.}. Také si lze najít, jaké nabízejí frameworky komponenty. Tyto tabulky bezpochyby pomůžou utřídit si informace k~tomu, aby výběr byl zúžen. Např. vyžaduje-li zadavatel podporu prohlížeče Internet Explorer ve verzi 6, má vývojář na výběr ze dvou frameworků - YAML a~Elasticss.
+Účelem práce je srovnání \gls{CSS} frameworků na hlubší úrovni než jednoduché tabulky na stránkách Wikipedie. V tabulkách tohoto typu je shrnuto pouze, co framework obsahuje či ne. Další tabulky ukazují, který framework funguje ve kterém prohlížeči, zdali mají podporu nějakého z preprocesorů a~pod jakou jsou licencí\footnote{Ke shlédnutí např. na \url{http://usablica.github.com/front-end-frameworks/compare.html}.}. Také si lze najít, jaké nabízejí frameworky komponenty. Tyto tabulky bezpochyby pomůžou utřídit si informace k~tomu, aby výběr byl zúžen. Např. vyžaduje-li zadavatel podporu prohlížeče \gls{IE} ve verzi 6, má vývojář na výběr ze dvou frameworků - \gls{YAML} a~Elasticss.
 
 Výhodou tabulkového srovnání je rychlá orientace na poli frameworků. Bohužel už nenabídnou srovnání, jak frameworky obstávají v~konkrétních případech. Během vývoje webového rozhraní tak vývojář zjistí, že frameworku chybí podstatné součásti, které by sám očekával. Nebo mohou obsahovat chyby či nedokonalá řešení. 
 
-Existují jisté zvyky a~způsoby, podle kterých se uživatelské rozhraní navrhuje v~souvislosti s~použitelností. Pak teprve přichází na řadu stylování samotných grafických prvků, jež dávají stránkám origiální vzhled a~díky nimž jsou jedinečné. Vývojář, pokud chce používat CSS framework nebo preprocesor, potřebuje znát, co je pro jeho konkrétní případ nejvíce užitečné. Jiné funkce bude upřednostňovat vývojář např. pro e-shop a~jiné zase pro osobní webovou stránku.
+Existují jisté zvyky a~způsoby, podle kterých se uživatelské rozhraní navrhuje v~souvislosti s~použitelností. Pak teprve přichází na řadu stylování samotných grafických prvků, jež dávají stránkám origiální vzhled a~díky nimž jsou jedinečné. Vývojář, pokud chce používat \gls{CSS} framework nebo preprocesor, potřebuje znát, co je pro jeho konkrétní případ nejvíce užitečné. Jiné funkce bude upřednostňovat vývojář např. pro e-shop a~jiné zase pro osobní webovou stránku.
 
 
 \section{Problém volby}
 
-V poslední době se působnost CSS frameworků rozrostla natolik, že není jednoduché si vybrat ten správný pro své potřeby. Zároveň vývojář nezná úskalí jednotlivých a~neví, co od nich může očekávat. S tím souvisí i~použití CSS preprocesorů, díky nimž získává kódování stylů nový rozměr. 
+V poslední době se působnost \gls{CSS} frameworků rozrostla natolik, že není jednoduché si vybrat ten správný pro své potřeby. Zároveň vývojář nezná úskalí jednotlivých a~neví, co od nich může očekávat. S tím souvisí i~použití \gls{CSS} preprocesorů, díky nimž získává kódování stylů nový rozměr. 
 
-Volba správného frameworku bude záviset na konkrétních faktorech (podpora responzivního designu, ovládacích prvků, multimediálního obsahu, ...). Ve výsledku ušetří mnoho času. Lze spozorovat, že určité webové aplikace mají podobně řešený layout. Zaměření tedy padne na výběr frameworku, který konkrétní typ zvládne. Podpora širšího spektra prvků se zvolí, pokud aplikace bude obsahovat příliš mnoho funkcí. Vývojář se vyhne zbytečným překážkám a~lehce stvoří kvalitní webové rozhraní. V neposlední řadě je důležité zhodnotit, zdali při použití frameworku bude po dlouhém čase CSS kód stále čitelný. Autor se sám s~odstupem času v~něm musí umět orientovat.
+Volba správného frameworku bude záviset na konkrétních faktorech (podpora responzivního designu, ovládacích prvků, multimediálního obsahu, ...). Ve výsledku ušetří mnoho času. Lze zpozorovat, že určité webové aplikace mají podobně řešený layout. Zaměření tedy padne na výběr frameworku, který konkrétní typ zvládne. Podpora širšího spektra prvků se zvolí, pokud aplikace bude obsahovat příliš mnoho funkcí. Vývojář se vyhne zbytečným překážkám a~lehce stvoří kvalitní webové rozhraní. V neposlední řadě je důležité zhodnotit, zdali při použití frameworku bude po dlouhém čase \gls{CSS} kód stále čitelný. Autor se sám s~odstupem času v~něm musí umět orientovat.
 
 
 
@@ -162,8 +180,8 @@ Vzhledem k těmto rozlišením je vhodné layout přizpůsobit. Jinak bude vypad
 Velice důležitým faktorem ve stylování layoutů je volba takového, který bude sloužit konkrétnímu účelu. Dnes je užitečné flexibilní chování k danému zařízení, ale i~fixní layouty najdou své využití. Každý z layoutů má své pro a~proti. Pro účely bakalářské práce jsou v~potaz brány layouty:
 
 \begin{itemize}
- \item fixní
- \item fluidní
+ \item fixní,
+ \item fluidní,
  \item adaptabilní.
 \end{itemize}
 \textbf{Fixní layout} má danou šířku, která je neměnná a~všechny další prvky v~něm mohou mít šířku jak fixní tak procentuelní. Výhodou takového layoutu je, že co vidí kodér na svém zařízení, to samé uvidí i~uživatelé na dalších jiných zařízeních\cite{fix}. Celý layout “sedí” na své pozici a~nehýbe se. Ukázka fixního layoutu je na obrázku \ref{imgFix}. Nejčastější šířka fixního layoutu bývá 960~px, neboť drtivá většina uživatelů vlastní obrazovku s~rozlišením 1024~x~768 a~vyšší\footnote{Graf s~nejpoužívanějšími rozlišeními na adrese  \url{http://gs.statcounter.com/\#resolution-ww-monthly-201204-201303}} (více o~šířce 960px v~kapitole \ref{sec:gs}~960~Grid~System). 
@@ -213,7 +231,7 @@ A tady dostává své místo design přizpůsobující se rozlišení zobrazovac
   @media (min-width:500px) { … }
 \end{verbatim}
 \normalsize
-Uvnitř bloku vymezeného složenými závorkami se definují vlastnosti, které se aplikují po splnění podmínky -- konkrétně minimální šířky prohlížeče na příslušném zařízení. Styly je možné různě propojovat a~strukturovat. Lze toho dosáhnout přímo v~HTML dokumentu:
+Uvnitř bloku vymezeného složenými závorkami se definují vlastnosti, které se aplikují po splnění podmínky -- konkrétně minimální šířky prohlížeče na příslušném zařízení. Styly je možné různě propojovat a~strukturovat. Lze toho dosáhnout přímo v~\gls{HTML} dokumentu:
 \scriptsize
 \begin{verbatim}
   <link rel="stylesheet" type="text/css"
@@ -221,7 +239,7 @@ Uvnitř bloku vymezeného složenými závorkami se definují vlastnosti, které
   href="style480.css" />
 \end{verbatim}
 \normalsize
-nebo v~CSS souborech\cite{mq}
+nebo v~\gls{CSS} souborech\cite{mq}
 \scriptsize
 \begin{verbatim}
 @import url(style480.css) (min-width:480px);
@@ -229,9 +247,9 @@ nebo v~CSS souborech\cite{mq}
 \normalsize
 
 
-Responzivní design by měl také z velké části být doménou samotných webových grafiků. Ti by měli být schopni navrhnout takový desgin, aby se při změně šířky vhodně adaptoval. Kodér naopak by měl znát jeho technické úskalí a~umět responzivitu reálně aplikovat. K tomu znatelně pomáhají právě CSS frameworky, zejména pak mřížkové (grid) systémy, které bez zohlednění responzivity jsou prakticky nepoužitelné\cite{dev}\cite{dev2}.
+Responzivní design by měl také z velké části být doménou samotných webových grafiků. Ti by měli být schopni navrhnout takový desgin, aby se při změně šířky vhodně adaptoval. Kodér naopak by měl znát jeho technické úskalí a~umět responzivitu reálně aplikovat. K tomu znatelně pomáhají právě \gls{CSS} frameworky, zejména pak mřížkové (grid) systémy, které bez zohlednění responzivity jsou prakticky nepoužitelné\cite{dev}\cite{dev2}.
 
-Otázka také je, zdali dnešní prohlížeče responzivní design vůbec podporují - tedy techniku CSS3 \textit{media queries}. Podle obrázku \ref{imgMQ} je to překvapivě vysoké procento a~v~podstatě jediné prohlížeče, které působí problém, jsou staré verze Internet Exploreru\cite{mqsup}. 
+Otázka také je, zdali dnešní prohlížeče responzivní design vůbec podporují - tedy techniku CSS3 \textit{media queries}. Podle obrázku \ref{imgMQ} je to překvapivě vysoké procento a~v~podstatě jediné prohlížeče, které působí problém, jsou staré verze \gls{IE}\cite{mqsup}. 
 
 \begin{figure}[h]
 	\begin{center}
@@ -251,7 +269,7 @@ Typografie je neodmyslitelnou složkou celého webdesignu. Struktura textu má n
 Typografická pravidla, kterých na webu lze dosáhnout, jsou zobrazení prvků jako uvozovky, pomlčky, rozdělovníky, mezery mezi navazujícími odstavci, vertikální mezery mezi nadpisy a~odstavci, odsazení prvního řádku. Některá nejsou možná zařídit kaskádovými styly jako např. odstranění jednoznakových předložek z konců řádků. Ty se řeší až na úrovni samotného textu. Zbytek pravidel by však neměl být opomíjen.
 
 Testování klade důraz na správné formátování odstavců a~nadpisů. Velikost fontu je možné relativně zvětšovat u sémanticky významných prvků (nadpisů). Ovšem zmenšovat jej v rámci běžných textů pod
-preference uživatelů nedoporučuje. Plyne to z doporučení W3C o přístupnosti webu.\cite{wcag} 
+preference uživatelů nedoporučuje. Plyne to z doporučení \gls{W3C} o přístupnosti webu.\cite{wcag} 
 
 Jiný případ představuje řádkování. Řádky by od sebe měly mít nějaký odstup, který také není vhodný definovat fixně. Vůči nastavení uživatele to může být nedostačující nebo přehnané. Kdežto relativní jednotky zajistí formátování řádků vhodné přesně pro konkrétní nastavení. 
 
@@ -268,18 +286,18 @@ Podpora ovládacích prvků je důležitá z prostého důvodu -- málokterá we
 Podpora všech těchto ovládacích prvků může být mnohdy nadstandardní ale pro někoho naopak nedostačující. Technicky je možné spojit více frameworků, pokud vývojář na stránce potřebuje širší škálu komponent. Tomuto účelu může posloužit např. knihovna Alloy UI , která je podrobněji popsána v kapitole \ref{sec:boots}. Předpoklad testování je tedy zhodnocení základních ovládacích prvků, které jsou důležité a~potřebné téměř při každé stavbě webu:
 
 \begin{itemize}
- \item navigace (i místní nabídka)
- \item tabulky
+ \item navigace (i místní nabídka),
+ \item tabulky,
  \item seznamy.
 \end{itemize}
 
-Samostatným kritériem jsou formuláře, jež se dají považovat za komponentu nadřazenou některým ovládacím prvkům. Jedná se o~textové oblasti (\textit{text area}), tlačítko pro odeslání (\textit{submit}), zaškrtávací pole (\textit{check box}), přepínače (\textit{radio button}), rozbalovací nabídka (\textit{select box}) a~případně další. Formuláře jsou nedílnou součástí objevující se na webu a~proto se předpokládá jejich podpora v~CSS frameworcích.
+Samostatným kritériem jsou formuláře, jež se dají považovat za komponentu nadřazenou některým ovládacím prvkům. Jedná se o~textové oblasti (\textit{text area}), tlačítko pro odeslání (\textit{submit}), zaškrtávací pole (\textit{check box}), přepínače (\textit{radio button}), rozbalovací nabídka (\textit{select box}) a~případně další. Formuláře jsou nedílnou součástí objevující se na webu a~proto se předpokládá jejich podpora v~\gls{CSS} frameworcích.
 
 \section{Soulad s použitelností webu}
 
-V poslední řadě nelze opomenout použitelnost a přístupnost webu, jak předkládá W3C konzorcium. Z velké části je to záležitost HTML kódu, ale o některé vlastnosti se zasluhují také kaskádové styly. CSS frameworky by tuto použitelnost neměly porušovat. 
+V poslední řadě nelze opomenout použitelnost a přístupnost webu, jak předkládá \gls{W3C} konzorcium. Z velké části je to záležitost \gls{HTML} kódu, ale o některé vlastnosti se zasluhují také kaskádové styly. \gls{CSS} frameworky by tuto použitelnost neměly porušovat. 
 
-CSS frameworky by měly obsahovat, pokud se jimi zabývají, následující vlastnosti:
+\gls{CSS} frameworky by měly obsahovat, pokud se jimi zabývají, následující vlastnosti:
 \begin{itemize}
  	\item zřetelnou a konzistentní navigaci (jednotná myšlenka designu),
  	\item elementy rozlišné barvy by měly svou informaci sdělovat i bez barevného rozlišení,
@@ -292,7 +310,7 @@ Následující kapitoly rozšiřují jednoduché srovnání o~podrobnější poz
 Kapitoly dále představí:
 
 \begin{itemize}
-  \item Použitelnost jednotlivých CSS frameworků tak aby práce na webovém rozhraní byla:
+  \item Použitelnost jednotlivých \gls{CSS} frameworků tak aby práce na webovém rozhraní byla:
 	\begin{itemize}
  	\item jednoduchá a~pohodlná,
  	\item rychlá a~efektivní,
@@ -308,31 +326,31 @@ Kapitoly dále představí:
 \end{itemize}
 \section{Rozdělení frameworků podle zaměření}
 
-CSS frameworků se v~poslední době objevuje nepřeberné množství. Aby jim vývojáři lépe porozuměli, lze je rozdělit do typů podle jejich specializace:
+\gls{CSS} frameworků se v~poslední době objevuje nepřeberné množství. Aby jim vývojáři lépe porozuměli, lze je rozdělit do typů podle jejich specializace:
 
 \begin{itemize}
  \item mřížkové systémy,
  \item specializované typografické knihovny,
  \item komplexní frameworky.
 \end{itemize}
-Každou kategorii v této práci zastupuje minimálně jeden CSS framework. Pro komplexní frameworky je výzva shrnout všechny dobré praktiky používané na webu do jednoho celku. Ostatní zaměření frameworků mohou vývojářům velmi dobře posloužit ke konkrétním účelům. Jaké to jsou a které frameworky jim odpovídají včetně zdůvodnění, proč byly zvoleny právě tyto, je uvedeno v následující kapitole.
+Každou kategorii v této práci zastupuje minimálně jeden \gls{CSS} framework. Pro komplexní frameworky je výzva shrnout všechny dobré praktiky používané na webu do jednoho celku. Ostatní zaměření frameworků mohou vývojářům velmi dobře posloužit ke konkrétním účelům. Jaké to jsou a které frameworky jim odpovídají včetně zdůvodnění, proč byly zvoleny právě tyto, je uvedeno v následující kapitole.
 
 
 \section{Použitelnost CSS frameworků v~praxi}
 
-CSS frameworky, které jsou testovány v této bakalářské práci, jsou následující:
+\gls{CSS} frameworky, které jsou testovány v této bakalářské práci, jsou následující:
 
 \begin{itemize}
  \item Twitter Bootstrap,
- \item YAML CSS framework,
+ \item \gls{YAML} \gls{CSS} framework,
  \item 960 Grid System -- (specilizovaný na mřížkový systém),
  \item Baseline -- (specializovaný na typografii).
 \end{itemize}
-Komplexní framework Twitter Bootstrap představuje zajímavý objekt k testování z důvodu velké oblíbenosti mezi vývojáři. Kdo se alespoň okrajově setkal s kódováním webových stránek, minimálně se o něm doslechl. Přestože žádný framework nedosahuje takové popularity jako Bootstrap, je příhodné srovnat alespoň podobně vypracovaný framework a zjistit, do jaké míry se mu svým charakterem může vyrovnat. Tento předpoklad splnil YAML CSS framework.
+Komplexní framework Twitter Bootstrap představuje zajímavý objekt k testování z důvodu velké oblíbenosti mezi vývojáři. Kdo se alespoň okrajově setkal s kódováním webových stránek, minimálně se o něm doslechl. Přestože žádný framework nedosahuje takové popularity jako Bootstrap, je příhodné srovnat alespoň podobně vypracovaný framework a zjistit, do jaké míry se mu svým charakterem může vyrovnat. Tento předpoklad splnil \gls{YAML} \gls{CSS} framework.
 
 Frameworky, které jsou zaměřené na konkrétní oblast, se uplatní v případě, kdy někteří vývojáři mají už své vlastní frameworky šité na míru např. specifickým potřebám ve své firmě. Komplexnost řešení dané problematiky ve frameworku by měla odpovídat vyšší úrovni než dosahují obecné frameworky. Předpokladem u takových frameworků je také menší velikost zdrojových souborů a s tím související menší náročnost při načítání stránky.  
 
-Předlohu pro testování frameworků YAML a~Bootstrap představuje internetový obchod Alza.cz, který poskytuje dostatek potřebných prvků k otestování a~jejich složitější rozestavění. Internetový obchod Alza.cz tak poskytl výborné prostředí pro zhodnocení, jak se určitý framework dokáže vypořádat s~takto komplexní aplikací.
+Předlohu pro testování frameworků \gls{YAML} a~Bootstrap představuje internetový obchod Alza.cz, který poskytuje dostatek potřebných prvků k otestování a~jejich složitější rozestavění. Internetový obchod Alza.cz tak poskytl výborné prostředí pro zhodnocení, jak se určitý framework dokáže vypořádat s~takto komplexní aplikací.
 
 Jako předloha pro typograficky zaměřený Baseline a~pro 960 Grid System posloužil internetový hudební zpravodaj RollingStone.com. Na zpravodajských stránkách je dobrá typografie vyžadována více než na e-shopu (několik tisíc uživatelů čte denně články). Zpravodaj RollingStone.com  navíc obsahuje rozmanitý layout, který je skvělý k~otestování frameworku 960~Grid~System. 
 
@@ -340,7 +358,7 @@ Jako předloha pro typograficky zaměřený Baseline a~pro 960 Grid System poslo
 
 \subsection{Postup práce}
 
-S použitím konkrétního frameworku je cílem dosáhnout základního funkčního vzhledu zvoleného webu bez jediného zásahu do stylů. Znamená to, že bude vytvořeno jen HTML s~třídami, jež framework nabízí. Z toho vyplynou silné a~slabé stránky celého frameworku. 
+S použitím konkrétního frameworku je cílem dosáhnout základního funkčního vzhledu zvoleného webu bez jediného zásahu do stylů. Znamená to, že bude vytvořeno jen \gls{HTML} s~třídami, jež framework nabízí. Z toho vyplynou silné a~slabé stránky celého frameworku. 
 
 
 \paragraph{Doporučení}
@@ -349,7 +367,7 @@ S použitím konkrétního frameworku je cílem dosáhnout základního funkčn�
 
 \begin{itemize}
  \item \textit{nevyplněné atributy href, alt a~title,}
- \item \textit{HTML značky bez obsahu (div, span, li, p, td, th),}
+ \item \textit{\gls{HTML} značky bez obsahu (div, span, li, p, td, th),}
  \item \textit{nevyplněné atributy class a~id}.
 \end{itemize}
 \textit{Pokud není z těchto vlastností nějaká v~pořádku, prvek se na stránce zvýrazní odlišnou barvou nebo se ohraničí. Ukazuje jednoduchý způsob, jak si ohlídat i~jiné vlastnosti na stránce. Tento nástroj se ukáže užitečný především v~době, kdy nám obsah generuje např. nějaký redakční systém a~uživatelé jej publikují pomocí editoru.}
@@ -369,20 +387,20 @@ Na závěr každého testování bude daný framework ohodnocen body podle zvole
 
 \subsection{YAML CSS framework}
 
-Přestože YAML je zkratkou pro Yet Another Multicolumn Layout, tedy \quotedblbase ještě jiný vícesloupcový layout\textquotedblleft , dokáže konkurovat svou propracovaností i~frameworkům, které oficiálně nabízejí širší spektrum předpřipravených prvků. Tvůrce YAMLu \textit{Dirk Jesse} si správně uvědomil, že když už uživatel tvoří webové rozhraní, objeví se na něm i~formuláře, různé typy navigací a~tabulky. 
+Přestože \gls{YAML} je zkratkou pro Yet Another Multicolumn Layout, tedy \quotedblbase ještě jiný vícesloupcový layout\textquotedblleft , dokáže konkurovat svou propracovaností i~frameworkům, které oficiálně nabízejí širší spektrum předpřipravených prvků. Tvůrce \gls{YAML}u \textit{Dirk Jesse} si správně uvědomil, že když už uživatel tvoří webové rozhraní, objeví se na něm i~formuláře, různé typy navigací a~tabulky. 
 
-YAML má dobře vyřešenou podporu prohlížeče Internet Explorer. Veškeré tyto tzv. \quotedblbase IE~hacky\textquotedblleft\footnote{Staré verze prohlížeče Internet Explorer jsou známé svým nedodržováním webových standardů. Odlišné zobrazení designu vývojáři řeší vkládáním identifikátorů před styly v CSS souborech, kterým rozumí pouze daná verze IE.} ukládá do samostatného souboru. Výhodu to představuje především pro vývojáře, kteří se rozhodnou cílit na skupinu používající moderní prohlížeče a~přejí si, aby zůstal web validní podle W3C konzorcia. 
+\gls{YAML} má dobře vyřešenou podporu prohlížeče \gls{IE}. Veškeré tyto tzv. \quotedblbase IE~hacky\textquotedblleft\footnote{Staré verze prohlížeče Internet Explorer jsou známé svým nedodržováním webových standardů. Odlišné zobrazení designu vývojáři řeší vkládáním identifikátorů před styly v \gls{CSS} souborech, kterým rozumí pouze daná verze IE.} ukládá do samostatného souboru. Výhodu to představuje především pro vývojáře, kteří se rozhodnou cílit na skupinu používající moderní prohlížeče a~přejí si, aby zůstal web validní podle \gls{W3C} konzorcia. 
 
 \paragraph{Responzivní web design}
 
-YAML si ve smyslu responzivity vede velmi dobře a~celková práce s layoutem je více než pohodlná. Obsahuje jak fluidní, tak adaptabilní layout (obr.~\ref{imgYR}). Myšlenka adaptace layoutu je postavena na tzv. progresivní linearizaci. Znamená to, že není nutné vytvářet styly pro každé rozlišení zařízení zvlášť. Stačí určit hraniční šířku, od které layout vypadá nepoužitelně a~upravit třídy tvořící mřížku, aby se přizpůsobovaly aktuální šířce okna.
+\gls{YAML} si ve smyslu responzivity vede velmi dobře a~celková práce s layoutem je více než pohodlná. Obsahuje jak fluidní, tak adaptabilní layout (obr.~\ref{imgYR}). Myšlenka adaptace layoutu je postavena na tzv. progresivní linearizaci. Znamená to, že není nutné vytvářet styly pro každé rozlišení zařízení zvlášť. Stačí určit hraniční šířku, od které layout vypadá nepoužitelně a~upravit třídy tvořící mřížku, aby se přizpůsobovaly aktuální šířce okna.
 
 
 \paragraph{Layout}
 
-Ve frameworku YAML je možné volně kombinovat sloupcový systém s mřížkovým systémem. Sloupcový systém poskytuje 1-3-2 nastavení. Sloupce 1 a 2 jsou definovány jako plovoucí prvky a třetí představuje statický kontejner (obr.~\ref{imgCol}). Zastánci layoutu s fixní šířkou 960~px (více v kapitole \ref{sec:gs}) najdou ve frameworku také styly pro tento systém. 
+Ve frameworku \gls{YAML} je možné volně kombinovat sloupcový systém s mřížkovým systémem. Sloupcový systém poskytuje 1-3-2 nastavení. Sloupce 1 a 2 jsou definovány jako plovoucí prvky a třetí představuje statický kontejner (obr.~\ref{imgCol}). Zastánci layoutu s fixní šířkou 960~px (více v kapitole \ref{sec:gs}) najdou ve frameworku také styly pro tento systém. 
 
-V mřížkovém systému vývojář intuitivně použije správnou třídu pro šířku sloupce, kterou potřebuje, neboť její název vyznačuje určité procento. Pokud si vývojář přeje použít šířku jinou než YAML nabízí, musí si takovou třídu vytvořit ve svém vlastním CSS souboru.  
+V mřížkovém systému vývojář intuitivně použije správnou třídu pro šířku sloupce, kterou potřebuje, neboť její název vyznačuje určité procento. Pokud si vývojář přeje použít šířku jinou než \gls{YAML} nabízí, musí si takovou třídu vytvořit ve svém vlastním \gls{CSS} souboru.  
 
 \begin{figure}[h]
 	\begin{center}
@@ -394,7 +412,7 @@ V mřížkovém systému vývojář intuitivně použije správnou třídu pro �
 
 \paragraph{Typografie}
 
-Jak si YAML vyhrál s~grid a~column systémem, o~to méně si dal záležet na typografických zásadách. Všimnout si toho můžeme např. u nadpisů. Na obrázku \ref{imgTyp} nadpis přes více řádků postrádá mezi řádky mezeru, aby byl nadpis lépe čitelný. V tomto případě se řádky téměř slévají do sebe. Samozřejmě jde o~drobný nedostatek, který lze jednoduše zpravit ve svém vlastním CSS kódu přidáním většího \verb#line-height#.
+Jak si \gls{YAML} vyhrál s~grid a~column systémem, o~to méně si dal záležet na typografických zásadách. Všimnout si toho můžeme např. u nadpisů. Na obrázku \ref{imgTyp} nadpis přes více řádků postrádá mezi řádky mezeru, aby byl nadpis lépe čitelný. V tomto případě se řádky téměř slévají do sebe. Samozřejmě jde o~drobný nedostatek, který lze jednoduše zpravit ve svém vlastním \gls{CSS} kódu přidáním většího \verb#line-height#.
 
 Když ale nahlédneme do zdrojových souborů, zjistíme, že výška řádků u jednotlivých nadpisů je rozdílná a~ve většině případů nedostačující. U nadpisu první úrovně je velikost písma 350~\% a~výška řádku je pouze 0.857~em. Celkově není jasné, podle jakých pravidel byly velikosti písem a~řádků stanoveny, každopádně čitelnosti neprospěly.
 
@@ -402,22 +420,22 @@ Když ale nahlédneme do zdrojových souborů, zjistíme, že výška řádků u
 
 Dalším nedostatkem je malá flexibilita formulářových prvků. Celkově nelze dosáhnout klasicky používaných formulářových vzhledů, taktéž zaškrtávací pole (\textit{check boxy}) se správně neuspořádaly (obr.~\ref{imgCom}). 
 
-YAML poskytuje volby zarovnání, či nastavení obrázků, videí či dalších volitelných prvků i~jejich responzivní řešení. V ohledu responzivity se jedná o~důležitý faktor, pro který by mělo existovat řešení, pokud je cílem práci vývojářům ulehčit. Za to patří YAMLu velké plus.
+\gls{YAML} poskytuje volby zarovnání, či nastavení obrázků, videí či dalších volitelných prvků i~jejich responzivní řešení. V ohledu responzivity se jedná o~důležitý faktor, pro který by mělo existovat řešení, pokud je cílem práci vývojářům ulehčit. Za to patří \gls{YAML}u velké plus.
 
 
 S ostatními ovládacími prvky nenastal žádný problém. U tabulek  je možné vybírat ze tří stylů, což pro základní stavbu webu naprosto stačí. Dále nabízí navíc styly pro upozornění a~chybové hlášky plus další drobné prvky\footnote{Všechny si je lze prohlédnout v~online dokumentaci \url{http://www.yaml.de/docs/index.html}.}. 
 
 \paragraph{Potenciál využití}
 
-S ohledem na různé skupiny vývojářů bylo shledáno, že framework YAML se skvěle hodí pro vývojáře, kteří webové stránky nikdy příliš nekódovali nebo chtějí rychle vytvořit funkční základ pro svou osobní prezentaci či jiný web a~nechtějí najímat drahé firmy. V podrobné dokumentaci vývojář najde vše, co nabízí s~popisem, jak co použít včetně ukázkových HTML kódů.
+S ohledem na různé skupiny vývojářů bylo shledáno, že framework \gls{YAML} se skvěle hodí pro vývojáře, kteří webové stránky nikdy příliš nekódovali nebo chtějí rychle vytvořit funkční základ pro svou osobní prezentaci či jiný web a~nechtějí najímat drahé firmy. V podrobné dokumentaci vývojář najde vše, co nabízí s~popisem, jak co použít včetně ukázkových \gls{HTML} kódů.
 
 Zároveň framework může výborně posloužit i~větším webovým rozhraním, pokud se člověk chce zaměřit na detaily sám od začátku. Všechny základní principy použití jsou dostatečně vyřešeny a~dá se na nich stavět. 
 
-Překážkou v použití může být neexistující minimalizovaný soubor, který by měl obsah  všech CSS souborů sjednotit. Dá se to vyřešit sice celkem snadno různými online minifikátory\footnote{Program, který zminimalizuje zdrojový kód např. do jednoho řádku. Jeden z oblíbených se nachází na adrese \url{http://refresh-sf.com/yui/}}, ovšem hotový soubor ve frameworku by tento čas ušetřil. Další možností je použití preprocesoru Sass nebo Stylus, které jedním příkazem zkompilují celý adresář a~zároveň soubory zminimalizují.
+Překážkou v použití může být neexistující minimalizovaný soubor, který by měl obsah  všech \gls{CSS} souborů sjednotit. Dá se to vyřešit sice celkem snadno různými online minifikátory\footnote{Program, který zminimalizuje zdrojový kód např. do jednoho řádku. Jeden z oblíbených se nachází na adrese \url{http://refresh-sf.com/yui/}}, ovšem hotový soubor ve frameworku by tento čas ušetřil. Další možností je použití preprocesoru \gls{Sass} nebo Stylus, které jedním příkazem zkompilují celý adresář a~zároveň soubory zminimalizují.
 
 \paragraph{Hodnocení}
 
-Kritéria hodnocení uvedená v~kapitole \ref{sec:hod} Kritéria a~hlediska testování byla pro názornost rozděleny do více podskupin. Dohromady získal YAML 10~bodů z~12. Obsahoval všechny požadované styly. Ve dvou případech nebylo řešení úplně bezchybné.
+Kritéria hodnocení uvedená v~kapitole \ref{sec:hod} Kritéria a~hlediska testování byla pro názornost rozděleny do více podskupin. Dohromady získal \gls{YAML} 10~bodů z~12. Obsahoval všechny požadované styly. Ve dvou případech nebylo řešení úplně bezchybné.
 
 \begin{table}[h]\centering
  	\caption[Hodnocení YAMLu]{Hodnocení frameworku YAML}\label{tab:yaml}
@@ -448,9 +466,9 @@ Bootstrap se oproti ostatním frameworkům stal robustním projektem, který si 
 
 Propracovanost frameworku Bootstrap může být občas nevýhodou. Jelikož je v~něm vše vyřešeno, vývojáři se nechtějí dále zabývat grafickou stránkou projektu, a tak weby ztrácejí svou jedinečnost.  Aby weby byly od sebe rozpoznatelné, dají se na ně aplikovat \textbf{témata} na tomto frameworku postavená.  Vývojář může vybírat ze zdarma open-source\footnote{Obrat open-source se používá v souvislosti s produkty, které mají veřejně dostupný zdrojový kód, podmínky užití se pak řídí danou licencí.} témat např. na stránce \url{http://bootswatch.com}. Mnohem lepší varianta se jeví zakoupit nějaké téma z komerčních na stránce \url{http://wrapbootstrap.com/}, které tvoří profesionálové a jejich výběr je pak daleko širší.
 
-Bootstrap obsahuje ve výsledku dva nezminimalizované soubory s~CSS styly. V prvním souboru jsou uvedeny všechny styly v~jednom logickém celku, ve druhém se nacházejí styly pro vše, co souvisí s~reponzivím designem. Obsahuje tedy i~adaptabilní layout i~řešení responzivity obrázků, jak je viditělné na obrázku~\ref{imgB2} (pro obrázky existuje také několik dalších stylů).
+Bootstrap obsahuje ve výsledku dva nezminimalizované soubory s~\gls{CSS} styly. V prvním souboru jsou uvedeny všechny styly v~jednom logickém celku, ve druhém se nacházejí styly pro vše, co souvisí s~reponzivím designem. Obsahuje tedy i~adaptabilní layout i~řešení responzivity obrázků, jak je viditělné na obrázku~\ref{imgB2} (pro obrázky existuje také několik dalších stylů).
 
-Zdrojové soubory si lze stáhnout také rozdělené podle společných vlastností v jednotlivých souborech, ale jsou napsány v preprocesoru LESS. CSS rozdělené soubory neobsahuje.
+Zdrojové soubory si lze stáhnout také rozdělené podle společných vlastností v jednotlivých souborech, ale jsou napsány v preprocesoru LESS. \gls{CSS} rozdělené soubory neobsahuje.
 
 
 \paragraph{Layout}
@@ -467,7 +485,7 @@ Layout se správně seskupil podle velikosti malého zařízení. Uživatel má 
 
 Už na elementární úrovni člověk pozná, že se jedná o~komplexní framework. Obsahuje grafické rozhraní často pro nezbytné maličkosti jako je drobečková navigace nebo stránkovač (obr. \ref{imgB1}).
 
-Všechny ostatní prvky, které bylo nutné použít k postavení webového rozhraní Alzy, Bootstrap obsahoval v~daleko širším rozpětí, než bylo potřeba. (Bootstrap má podobně komplexní dokumentaci jako YAML\footnote{Více informací o~všech podporovaných prvcích na oficiálním webu \\ \url{http://twitter.github.io/bootstrap/}.}) Pro oblasti formuláře, ovládací prvky i~media nabízel výběr hned mezi několika volbami -- např. navigace horizontální, vertikální, rozbalovací, přepínací záložky. V kombinaci dvou voleb byla jednoduše vytvořena i~navigace v~e-shopu (obr.~\ref{imgNav}).
+Všechny ostatní prvky, které bylo nutné použít k postavení webového rozhraní Alzy, Bootstrap obsahoval v~daleko širším rozpětí, než bylo potřeba. (Bootstrap má podobně komplexní dokumentaci jako \gls{YAML}\footnote{Více informací o~všech podporovaných prvcích na oficiálním webu \\ \url{http://twitter.github.io/bootstrap/}.}) Pro oblasti formuláře, ovládací prvky i~media nabízel výběr hned mezi několika volbami -- např. navigace horizontální, vertikální, rozbalovací, přepínací záložky. V kombinaci dvou voleb byla jednoduše vytvořena i~navigace v~e-shopu (obr.~\ref{imgNav}).
 
 \paragraph{Potenciál využití}
 
@@ -475,7 +493,7 @@ Všechny ostatní prvky, které bylo nutné použít k postavení webového rozh
 
 \paragraph{Hodnocení}
 
-Ve funkčním vzhledu není mezi Boostrapem a~ YAMLem příliš znatelný rozdíl. I YAML je až na zmíněné nedostatky velmi dobře propracovaný. Jediný velký rozdíl mezi těmito frameworky je velikost komunity vyvíjející a~používající framework a~to především z důvodu odlišné orientace každého frameworku.
+Ve funkčním vzhledu není mezi Boostrapem a~ \gls{YAML}em příliš znatelný rozdíl. I \gls{YAML} je až na zmíněné nedostatky velmi dobře propracovaný. Jediný velký rozdíl mezi těmito frameworky je velikost komunity vyvíjející a~používající framework a~to především z důvodu odlišné orientace každého frameworku.
 
 Bootstrap se silně snaží o~dosažení dokonalosti a~není třeba zapírat, že se mu to dobře daří. Ve všech požadovaných kritériích dosahuje nejvyššího hodnocení. Znamená to, že pokud vývojář hledá framework, na který se může spolehnout ve všech důležitých i~méně používaných aspektech stránky, Bootstrap je pro něj tou nejlepší variantou.
 
@@ -542,7 +560,7 @@ K hodnocení specializovaného frameworku jako je tento se musí přistupovat in
 
 Baseline je omezující z pohledu stavby layoutu. Při testování je nutné přizpůsobit frameworku výběr webu. Na webu RollingStone.com tedy nebyla brána v~úvahu úvodní strana, ale klasický dvousloupcový layout. Ten je typický právě pro zpravodajské weby a~blogy.
 
-Při tvorbě webu si lze pomocí CSS zobrazit mřížku \ref{imgBa3}, aby vývojář viděl a~kontroloval si, zdali je koncept účaří funkční a~něco jej nenarušuje. Kromě ní obsahuje framework ještě styly pro mobilní zařízení. Přestože nepočítá s~responzivním designem, je plusem, že myslí alespoň na mobilní zařízení. 
+Při tvorbě webu si lze pomocí \gls{CSS} zobrazit mřížku \ref{imgBa3}, aby vývojář viděl a~kontroloval si, zdali je koncept účaří funkční a~něco jej nenarušuje. Kromě ní obsahuje framework ještě styly pro mobilní zařízení. Přestože nepočítá s~responzivním designem, je plusem, že myslí alespoň na mobilní zařízení. 
 
 
 
@@ -551,7 +569,7 @@ Při tvorbě webu si lze pomocí CSS zobrazit mřížku \ref{imgBa3}, aby vývoj
 Problém nastane, když vložíme do stránek obrázek. Styly pro obrázky v~Baseline nejsou vůbec nijak předpřipraveny. Je to chybou, neboť rozhodí text tak, že přestane sedat na linky \ref{imgBa4}. V tento okamžik přestává framework sloužit účelu, za jakým byl vytvořen. Přidání vlastnosti \verb#float: left# nebo \verb#right# vše napraví. Potenciálnímu vývojáři frameworku, který nemá s~kódováním příliš zkušenosti, to nemusí být ihned jasné. 
 
 
-Typografie pokulhává v~případě nadpisů a~odstavců. Pro odstavce používá knižní odsazení a~za odstavci nevkládá mezery. Odsazení je v~pořádku, ale nutno podotknout, že na webu se zvlášť při malé velikosti písma čte text bez mezery mezi odstavci hůře. Navíc u nadpisů 5. a~6. úrovně nejsou mezery vůbec - ani nad ani pod nadpisem. Uživatel bude těžko tyto záchytné body považovat za nadpisy. Když zaměření padne jen na nadpis 6. úrovně, není rozeznatelný od textu označeného tučně tagem \verb#<strong></strong>#. Jsou to nedostatky, jež lze zpravit dodáním vlastního CSS, jenomže tak může být lehce koncepce účaří rozbita.
+Typografie pokulhává v~případě nadpisů a~odstavců. Pro odstavce používá knižní odsazení a~za odstavci nevkládá mezery. Odsazení je v~pořádku, ale nutno podotknout, že na webu se zvlášť při malé velikosti písma čte text bez mezery mezi odstavci hůře. Navíc u nadpisů 5. a~6. úrovně nejsou mezery vůbec - ani nad ani pod nadpisem. Uživatel bude těžko tyto záchytné body považovat za nadpisy. Když zaměření padne jen na nadpis 6. úrovně, není rozeznatelný od textu označeného tučně tagem \verb#<strong></strong>#. Jsou to nedostatky, jež lze zpravit dodáním vlastního \gls{CSS}, jenomže tak může být lehce koncepce účaří rozbita.
 
 \paragraph{Ovládací prvky}
 
@@ -606,7 +624,7 @@ Framework ve své 960px šířce nabízí hned tři varianty -- 12, 16 a~24 slou
 
 Jak bylo uvedeno v~kapitole o~responzivním designu, vývojáři čelí zařízením s~mnoha rozlišeními. V této souvislosti je na místě položit si otázku, zdali legendární šířka 960~px bude pro web jako takový dostatečná. Závisí to na každém zvlášť, co je jeho preferencí. Chce-li však někdo používat pouze dobrý grid  systém, 960px šířka nemusí být překážkou. 
 
-Framework nabízí řešení pro adaptivní layout\footnote{Na své hlavní stránce se odkazuje na \url{http://adapt.960.gs/}.}. Detekci šířky prohlížeče provádí pomocí javascriptu a~přiřazuje jim po té CSS šité na míru. Šírky dělí na:
+Framework nabízí řešení pro adaptivní layout\footnote{Na své hlavní stránce se odkazuje na \url{http://adapt.960.gs/}.}. Detekci šířky prohlížeče provádí pomocí javascriptu a~přiřazuje jim po té \gls{CSS} šité na míru. Šírky dělí na:
 
 \begin{itemize}
  \item mobilní pod 760 px
@@ -619,7 +637,7 @@ Framework nabízí řešení pro adaptivní layout\footnote{Na své hlavní str�
  \item 2520 px u rozlišení nad 2540 px 
 \end{itemize}
 
-Kouzlo tkví v~návaznosti na samotný grid  systém. Stačí do hlavičky HTML stránky přidat pár řádků a~okamžitě je stránka responzivní. Je to také příklad javascriptového řešení pro definování šířek k docílení respozivního designu.
+Kouzlo tkví v~návaznosti na samotný grid  systém. Stačí do hlavičky \gls{HTML} stránky přidat pár řádků a~okamžitě je stránka responzivní. Je to také příklad javascriptového řešení pro definování šířek k docílení respozivního designu.
 \scriptsize
 \begin{verbatim}
 <meta name="viewport" content="width=device-width, 
@@ -672,49 +690,49 @@ Vývoj webových technologií jde neustále kupředu a~pokud se přestanou vyví
 
 \subsection{Návrh}
 
-Při tvorbě stránek podle předlohy Alza.cz s~použitím frameworku YAML a~Bootstrap vznikla potřeba nakódování reklamy kolem layoutu. Nic, co by usnadnilo reklamu vytvořit ani jeden z frameworků nepodporuje. V době, kdy vládne marketing a~firmy cítí nutnost propagovat své produkty na webových stránkách, je reklama často využívaným prvkem. Cílem bylo do těchto frameworků v~rámci bakalářské práce komponentu vytvořit a~zjistit, jak je to v~jeho rámci složité. Protože se nejedná o~specifický grafický prvek, nebyl problém s~designem daného frameworku.
+Při tvorbě stránek podle předlohy Alza.cz s~použitím frameworku \gls{YAML} a~Bootstrap vznikla potřeba nakódování reklamy kolem layoutu. Nic, co by usnadnilo reklamu vytvořit ani jeden z frameworků nepodporuje. V době, kdy vládne marketing a~firmy cítí nutnost propagovat své produkty na webových stránkách, je reklama často využívaným prvkem. Cílem bylo do těchto frameworků v~rámci bakalářské práce komponentu vytvořit a~zjistit, jak je to v~jeho rámci složité. Protože se nejedná o~specifický grafický prvek, nebyl problém s~designem daného frameworku.
 
-Oba frameworky poskytují responzivní design a~pokud má být reklama cílená na všechny uživatele, je nutné, aby také odpovídala na aktuální šířku prohlížeče. Do frameworků byly navrženy celkem tři druhy reklamních bannerů (proužků). Vkládání bannerů se předpokládá do HTML jako obrázek pomocí tagu \verb#<img />#, který může být obalený libovolnými značkami. Třídy se styly k reklamě se nacházejí v~souboru \textit{adver.css}.
+Oba frameworky poskytují responzivní design a~pokud má být reklama cílená na všechny uživatele, je nutné, aby také odpovídala na aktuální šířku prohlížeče. Do frameworků byly navrženy celkem tři druhy reklamních bannerů (proužků). Vkládání bannerů se předpokládá do \gls{HTML} jako obrázek pomocí tagu \verb#<img />#, který může být obalený libovolnými značkami. Třídy se styly k reklamě se nacházejí v~souboru \textit{adver.css}.
 
 \subsection{Použití v~praxi}
-Při tvorbě stylů byly v~úvahu brány konvence pojmenovávání daných frameworků. Každý element ve frameworku YAML má prefix \quotedblbase ym-\textquotedblleft , v~Bootstrapu výrazná omezení v~pojmenování nejsou. 
+Při tvorbě stylů byly v~úvahu brány konvence pojmenovávání daných frameworků. Každý element ve frameworku \gls{YAML} má prefix \quotedblbase ym-\textquotedblleft , v~Bootstrapu výrazná omezení v~pojmenování nejsou. 
 
-Základem je horizontální banner, který může být umístěn kdekoliv na stránce (obr.~\ref{imgBan}). Pro zajištění správného chování v~případě řádkových (\textit{inline}) prvků, je potřeba tagu obsahující banner přidat třídu \verb#.ym-ad-hor# v~YAMLU a~v~Bootstrapu \verb#.ad-hor#. Jelikož YAML poskytuje pro media třídu \verb#.flexible#, aby se banner přizpůsoboval šířce okna, stačí mu tuto třídu přiřadit. V Bootstrapu toto není potřeba, neboť ten obrázky přizpůsobuje automaticky za každých podmínek.
+Základem je horizontální banner, který může být umístěn kdekoliv na stránce (obr.~\ref{imgBan}). Pro zajištění správného chování v~případě řádkových (\textit{inline}) prvků, je potřeba tagu obsahující banner přidat třídu \verb#.ym-ad-hor# v~\gls{YAML}U a~v~Bootstrapu \verb#.ad-hor#. Jelikož \gls{YAML} poskytuje pro media třídu \verb#.flexible#, aby se banner přizpůsoboval šířce okna, stačí mu tuto třídu přiřadit. V Bootstrapu toto není potřeba, neboť ten obrázky přizpůsobuje automaticky za každých podmínek.
 
 
 
 Dalším využívaným prvkem k upoutání pozornosti potenciálního zákazníka bývají bannery umístěné na bocích layoutu s~jejich fixní pozicí (obr.~\ref{imgFix}). Uživatel při skrolování stránky má banner stále na očích. Tagům obsahující tyto prvky se přiřadí třída \verb#.ym-ad-fix# nebo \verb#.ad-fix#. Přesné umístění banneru si uživatel musí definovat ale už sám podle rozmístění svého layoutu. 
 
 
-Tento způsob umístění reklamy má význam pouze u velkých rozlišení, kdy kolem layoutu existuje velká část prázdného místa. V určitém okamžiku se okno prohlížeče nebo zařízení dostane do stavu, kdy samozřejmě boční bannery nebudou viditelné. Tehdy by se reklama měla umístit dovnitř layoutu (obr.~\ref{imgRes}), stejně jako to řeší samotná Alza.cz. Pro tento případ se použije horizontální varianta obrázku. V HTML dostane třídu \verb#.ym-ad-res# (\verb#.ad-res#), pro kterou je definován bod, v~němž layout nemá kolem sebe již dostatek místa na zobrazení bočních bannerů. Obrázek u YAMLu by měl opět obsahovat třídu \verb#.flexible#.
+Tento způsob umístění reklamy má význam pouze u velkých rozlišení, kdy kolem layoutu existuje velká část prázdného místa. V určitém okamžiku se okno prohlížeče nebo zařízení dostane do stavu, kdy samozřejmě boční bannery nebudou viditelné. Tehdy by se reklama měla umístit dovnitř layoutu (obr.~\ref{imgRes}), stejně jako to řeší samotná Alza.cz. Pro tento případ se použije horizontální varianta obrázku. V \gls{HTML} dostane třídu \verb#.ym-ad-res# (\verb#.ad-res#), pro kterou je definován bod, v~němž layout nemá kolem sebe již dostatek místa na zobrazení bočních bannerů. Obrázek u \gls{YAML}u by měl opět obsahovat třídu \verb#.flexible#.
 
 \subsection{Zhodnocení}
-Při porovnávání tvorby komponent pro každý framework zvlášť nebyly shledány výrazné rozdíly. V Bootstrapu bylo jednodušší tvořit HTML aniž by vývojář musel myslet na více tříd, které prvky potřebují mít přiřazené. Větší pozornosti a znalost daného frameworku by byly potřeba, pokud by do něj vývojář chtěl více zasahovat. Platí podobná pravidla jako při vývoji softwaru. Svým zásahem lze nabourat navrženou koncepci.
+Při porovnávání tvorby komponent pro každý framework zvlášť nebyly shledány výrazné rozdíly. Ve frameworku Bootstrap bylo jednodušší tvořit \gls{HTML} kostru, aniž by vývojář musel myslet na více tříd, které prvky potřebují mít přiřazené. Větší pozornosti a znalost daného frameworku by byly potřeba, pokud by do něj vývojář chtěl více zasahovat. Platí podobná pravidla jako při vývoji softwaru. Svým zásahem lze nabourat navrženou koncepci.
 
 Celkově vytvořit komponentu však nebylo nijak náročné. Lze předpokládat, že závislost na zdrojových souborech bude minimální i~při dalších možných komponentách.
 
 
 \chapter{CSS preprocesory}
-Přestože první preprocesory vznikly už před několika lety, jejich možnost využití se do většího podvědomí dostává kolem roku 2010. Internetové diskuse se plní debatami, zda použít CSS preprocesor a~pokud ano, tak jaký. 
+Přestože první preprocesory vznikly už před několika lety, jejich možnost využití se do většího podvědomí dostává kolem roku 2010. Internetové diskuse se plní debatami, zda použít \gls{CSS} preprocesor a~pokud ano, tak jaký. 
 
-Důraz se klade na možnosti a~vhodnost nasazení z hlediska syntaxe preprocesorového jazyka a~způsoby konverze do CSS, případně další rozšiřující volby. Hodnotí se funkčnost a~varianty možného provázání do aplikací. Nakonec je popsána implementace napojení preprocesorů na redakční systém.
+Důraz se klade na možnosti a~vhodnost nasazení z hlediska syntaxe preprocesorového jazyka a~způsoby konverze do \gls{CSS}, případně další rozšiřující volby. Hodnotí se funkčnost a~varianty možného provázání do aplikací. Nakonec je popsána implementace napojení preprocesorů na redakční systém.
 
 
 \section{Úvod do problematiky preprocesorů}
 
 
-V momentu, kdy několik vývojářů pracuje na velikém projektu (pro představu např. Google nebo Facebook), okamžitě vývojář pozná sílu preprocesorů. Stejně jako v~programování se dnes používají zejména objektově orientované jazyky, přichází s~tímto i~komunita využívající CSS. V několika desítkách CSS souborů už opravdu nastává obrovský chaos. CSS preprocesory jsou pro něj jediným řešením.
+V momentu, kdy několik vývojářů pracuje na velikém projektu (pro představu např. Google nebo Facebook), okamžitě vývojář pozná sílu preprocesorů. Stejně jako v~programování se dnes používají zejména objektově orientované jazyky, přichází s~tímto i~komunita využívající \gls{CSS}. V několika desítkách \gls{CSS} souborů už opravdu nastává obrovský chaos. \gls{CSS} preprocesory jsou pro něj jediným řešením.
 
-Průkopníkem CSS preprocesorů se stal jazyk \textbf{Sass} vyvíjený od roku 2006. Z něj si vzal inspiraci \textbf{LESS}, na němž se stále usilovně pracuje. S novým a~vlastním neotřelým řešením přichází \textbf{Stylus}. Vytváří si vlastní konvence, s~nimiž může být obtížné se sžít, pokud jde o~konzervativní programátory. 
+Průkopníkem \gls{CSS} preprocesorů se stal jazyk \textbf{\gls{Sass}} vyvíjený od roku 2006. Z něj si vzal inspiraci \textbf{LESS}, na němž se stále usilovně pracuje. S novým a~vlastním neotřelým řešením přichází \textbf{Stylus}. Vytváří si vlastní konvence, s~nimiž může být obtížné se sžít, pokud jde o~konzervativní programátory. 
 
-Existují i~další CSS preprocesory, ale už nejsou tak dokonalé, nevyvíjejí se (např. xCSS\footnote{Tento preprocesor má kompilaci napsanou pouze v~PHP \url{http://xcss.antpaw.org/}.}) anebo postrádají jakoukoliv~oficiální dokumentaci či rozumného průvodce. Kvůli uvedeným důvodům si u vývojářů zatím nezískali tak vysokou popularitu.
+Existují i~další \gls{CSS} preprocesory, ale už nejsou tak dokonalé, nevyvíjejí se (např. xCSS\footnote{Tento preprocesor má kompilaci napsanou pouze v~\gls{PHP} \url{http://xcss.antpaw.org/}.}) anebo postrádají jakoukoliv~oficiální dokumentaci či rozumného průvodce. Kvůli uvedeným důvodům si u vývojářů zatím nezískali tak vysokou popularitu.
 
-Populární webový portál \textit{CSS Tricks} zabývající se CSS vylepšeními v~roce 2012 uskutečnil anketu\footnote{Výsledky ke shlédnutí na \url{http://css-tricks.com/poll-results-popularity-of-css-preprocessors/}.}, kde zjišťoval, zdali návštěvníci využívají preprocesory a~pokud ano, tak jaké preferují. Odpovědělo téměř 13~000 návštěvníků. Mezi nejčastějšími odpovědmi se objevily právě tyto preprocesory. Přestože Stylus v~porovnání se Sass a~LESS získal nízké procento úspěšnosti, nástroj vypadá dostatečně zajímavě na to, aby mu byla věnována pozornost. Před započetím prezentace poznatků je potřeba krátce uvést a~vysvětlit, jak se používají. 
+Populární webový portál \textit{CSS Tricks} zabývající se \gls{CSS} vylepšeními v~roce 2012 uskutečnil anketu\footnote{Výsledky ke shlédnutí na \url{http://css-tricks.com/poll-results-popularity-of-css-preprocessors/}.}, kde zjišťoval, zdali návštěvníci využívají preprocesory a~pokud ano, tak jaké preferují. Odpovědělo téměř 13~000 návštěvníků. Mezi nejčastějšími odpovědmi se objevily právě tyto preprocesory. Přestože Stylus v~porovnání se \gls{Sass} a~LESS získal nízké procento úspěšnosti, nástroj vypadá dostatečně zajímavě na to, aby mu byla věnována pozornost. Před započetím prezentace poznatků je potřeba krátce uvést a~vysvětlit, jak se používají. 
 
 
 \subsection{Sass}
 
-Preprocesor Sass je postaven na Ruby\footnote{Objektově orientovaný skriptovací programovací jazyk.}. Proto vývojáři, kteří jsou webové stránky zvyklí programovat v~Ruby on Rails\footnote{Framework nad jazykem Ruby používaný k programování webových aplikací.}, nebudou mít problém s~nasazením, neboť se nemusí zabývat novými technikami. 
+Preprocesor \gls{Sass} je postaven na Ruby\footnote{Objektově orientovaný skriptovací programovací jazyk.}. Proto vývojáři, kteří jsou webové stránky zvyklí programovat v~Ruby on Rails\footnote{Framework nad jazykem Ruby používaný k programování webových aplikací.}, nebudou mít problém s~nasazením, neboť se nemusí zabývat novými technikami. 
 
 Jako běžná syntaxe se používá \quotedblbase SCSS\textquotedblleft   ~s rozšířením \verb#.scss# a~je nadmnožinou CSS3 syntaxe. Znamená to, že každé validní CSS3 styly jsou i~validní SCSS. Existuje i~starší syntaxe s~rozšířením \verb#.sass#. Hlavním rozdílem oproti SCSS je zjednodušený zápis -- není třeba používat závorky, středníky; místo toho se kód odsazuje a~zarovnává do bloků. Obě syntaxe jsou plně podporované.
 
@@ -727,7 +745,7 @@ Jako běžná syntaxe se používá \quotedblbase SCSS\textquotedblleft   ~s roz
  }
 \end{verbatim}
 \normalsize
-Kód napsaný v~Sass:
+Kód napsaný v~\gls{Sass}:
 \scriptsize
 \begin{verbatim}
  #main
@@ -751,7 +769,7 @@ Překlad souborů se provede příkazem:
 
 \subsection{LESS}
 
-LESS funguje jak s~kompilováním na straně serveru, tak s~javascriptem na straně klienta v~prohlížeči. Syntaxe je opět mezi LESS a~CSS soubory přenositelná, ale na druhé straně vývojář nesmí žádné značení opomíjet. Může se to stát překážkou pro ty, kteří očekávají od preprocesoru ulehčení ve všech směrech včetně syntaxe. Na druhou stranu nedovolí vývojáři tvořit nečitelný kód.
+LESS funguje jak s~kompilováním na straně serveru, tak s~javascriptem na straně klienta v~prohlížeči. Syntaxe je opět mezi LESS a~\gls{CSS} soubory přenositelná, ale na druhé straně vývojář nesmí žádné značení opomíjet. Může se to stát překážkou pro ty, kteří očekávají od preprocesoru ulehčení ve všech směrech včetně syntaxe. Na druhou stranu nedovolí vývojáři tvořit nečitelný kód.
 
 \noindent Instalace se provede příkazem:
 \scriptsize
@@ -765,7 +783,7 @@ Kompilace pak:
   lessc style.less style.css 
 \end{verbatim}
 \normalsize
-případně nalinkováním souboru less.js dostupném na  oficiálním webu nebo Githubu projektu. Ukázka zavedení javascriptového překladu LESS souborů v~HTML:
+případně nalinkováním souboru less.js dostupném na  oficiálním webu nebo Githubu projektu. Ukázka zavedení javascriptového překladu LESS souborů v~\gls{HTML}:
 \scriptsize
 \begin{verbatim}
 <link rel="stylesheet/less" type="text/css" href="styles.less">
@@ -775,7 +793,7 @@ případně nalinkováním souboru less.js dostupném na  oficiálním webu nebo
 
 \subsection{Stylus}
 
-Stylus používá zjednodušenou syntaxi podobně jako Sass s~rozdílem, že Stylus opomíjí všechny dělící znaky kromě čárek při výčtu hodnot:
+Stylus používá zjednodušenou syntaxi podobně jako \gls{Sass} s~rozdílem, že Stylus opomíjí všechny dělící znaky kromě čárek při výčtu hodnot:
 \scriptsize
 \begin{verbatim}
   body
@@ -813,14 +831,14 @@ Všechny jazyky je třeba dostat do takové podoby, aby mu rozuměl sám prohlí
 
 
 \begin{itemize}
- \item javascriptem
- \item kompilací pomocí PHP\footnote{PHP znamená “hypertextový preprocesor”. Jedná se o~skriptovací jazyk, který je používán k vývoji webových stránek. PHP se provádí na straně serveru.}
- \item kompilátorem daného jazyka
+ \item javascriptem,
+ \item kompilací pomocí \gls{PHP},
+ \item kompilátorem daného jazyka.
 \end{itemize}
 
-Používat kompilaci javascriptem v~produkčním režimu na webu není štastná volba. Při každé změně souboru se okamžitě na straně klienta změní i~obsah. Vhodné využití najde, když není žádoucí stále spouštět příkaz na kompilaci. V případě LESSu nahradí chybějící volbu \verb#--watch#, jenž obsahují Sass a~Stylus. Nicméně by bylo rozumnější tuto funkčnost minimálně zavést k příkazu lessc oficiálně. Vývojář by si mohl vybrat, zdali chce používat javascript nebo bude využívat raději příkazovou řádku. 
+Používat kompilaci javascriptem v~produkčním režimu na webu není štastná volba. Při každé změně souboru se okamžitě na straně klienta změní i~obsah. Vhodné využití najde, když není žádoucí stále spouštět příkaz na kompilaci. V případě LESSu nahradí chybějící volbu \verb#--watch#, jenž obsahují \gls{Sass} a~Stylus. Nicméně by bylo rozumnější tuto funkčnost minimálně zavést k příkazu lessc oficiálně. Vývojář by si mohl vybrat, zdali chce používat javascript nebo bude využívat raději příkazovou řádku. 
 
-PHP kompilace je výhodná u PHP aplikací a~jejich frameworků, které nabízejí nějakou správu assetů\footnote{Statické soubory, které souvisejí s~tvorbou webové stránky jako např. obrázky, css soubory apod.}. Vývojáři pak nemusí používat nějaké další prostředí pro kompilaci preprocesorů a~vše se tak může dít automatiky. Díky PHP parsování mohou být CSS preprocesory integrovány do redakčních systémů či do PHP frameworků, což je ukázáno v~kapitole \ref{sec:cms} Integrace preprocesorů do redakčního systému. 
+\gls{PHP} kompilace je výhodná u \gls{PHP} aplikací a~jejich frameworků, které nabízejí nějakou správu assetů\footnote{Statické soubory, které souvisejí s~tvorbou webové stránky jako např. obrázky, css soubory apod.}. Vývojáři pak nemusí používat nějaké další prostředí pro kompilaci preprocesorů a~vše se tak může dít automatiky. Díky \gls{PHP} parsování mohou být \gls{CSS} preprocesory integrovány do redakčních systémů či do \gls{PHP} frameworků, což je ukázáno v~kapitole \ref{sec:cms} Integrace preprocesorů do redakčního systému. 
 
 
 Klasická kompilace na příkazové řádce se používá při vývoji na localhostu\footnote{Localhost odkazuje na místní počítač, kde běží program. Např. pokud je spuštěn webový prohlížeč na daném počítači, tento počítač je považován za localhost.}, kde má uživatel preprocesor nainstalovaný. Pokud vyvíjí webové rozhraní, použití této varianty je bezesporu nejvýhodnější. Samotný kompilátor obsahuje totiž několik užitečných nástrojů vývoj značně zpříjemňujících. 
@@ -836,7 +854,7 @@ Z důvodu markantnějších rozdílů mezi nástroji preprocesorů než mezi jej
 
 \paragraph{Formát výstupu}
 
- U preprocesoru Sass si vývojář může zvolit formát výstupního souboru hned ze čtyř možných variant. Kromě komprese kódu do jednoho řádku lze vybrat formát s~viditelnou hiearchickou strukturou
+ U preprocesoru \gls{Sass} si vývojář může zvolit formát výstupního souboru hned ze čtyř možných variant. Kromě komprese kódu do jednoho řádku lze vybrat formát s~viditelnou hiearchickou strukturou
 \scriptsize
 \begin{verbatim}
 .ym-vlist {
@@ -865,7 +883,7 @@ nebo klasické rozmístění s~každou vlastností na samostatném řádku
 \normalsize.
 
 Naopak LESS nabízí kompresi YUI\footnote{Yahoo! User Interfece knihovna pro stavbu webových stránek. Mimo jiné poskytuje kompresor pro javascript a~css soubory \url{http://yui.github.io/yuicompressor/}.} či svou vlastní zjednodušenou kompresi. Stylus obsahuje volbu pouze zjednodušené komprese.\\
-Sass: 3, LESS: 2, Stylus: 1
+\gls{Sass}: 3, LESS: 2, Stylus: 1
 
 \paragraph{Odlaďování chyb}
 
@@ -887,8 +905,8 @@ Upozornění podobně řeší Stylus, občas ale nedokáže specifikovat jasně 
 	\label{imgSass1}
 \end{figure}
 
-Kdežto Sass vypíše pouze vysvětlení chyby, která se nachází okolo určitého řádku, ale vždy to přesně nedokáže specifikovat. Znamená to, že se splete o~několik řádků. Všechny tři preprocesory pak obsahují debugovací nástroje pro prohlížeč Firefox -- \textit{FireSass}, \textit{FireLESS} a~\textit{FireStylus}.\\
-LESS: 3, Stylus: 2, Sass: 1
+Kdežto \gls{Sass} vypíše pouze vysvětlení chyby, která se nachází okolo určitého řádku, ale vždy to přesně nedokáže specifikovat. Znamená to, že se splete o~několik řádků. Všechny tři preprocesory pak obsahují debugovací nástroje pro prohlížeč Firefox -- \textit{FireSass}, \textit{FireLESS} a~\textit{FireStylus}.\\
+LESS: 3, Stylus: 2, \gls{Sass}: 1
 
 \begin{figure}[h]
 	\begin{center}
@@ -901,36 +919,36 @@ LESS: 3, Stylus: 2, Sass: 1
 
 \paragraph{Hromadná kompilace a~sledování změn}
 
- Sass a~Stylus obecně nabízí širší škálu nástrojů. Navíc obsahují např. hromadnou kompilaci css souborů v~určitém adresáři nebo sledování změny souboru, kdy se příkaz na kompilaci spustí jen jednou:
+ \gls{Sass} a~Stylus obecně nabízí širší škálu nástrojů. Navíc obsahují např. hromadnou kompilaci css souborů v~určitém adresáři nebo sledování změny souboru, kdy se příkaz na kompilaci spustí jen jednou:
 \scriptsize
 \begin{verbatim}
 sass --watch style.scss:style.css
 stylus --watch style.styl:style.css
 \end{verbatim}
 \normalsize
-Sass: 1, Stylus: 1, LESS: 0
+\gls{Sass}: 1, Stylus: 1, LESS: 0
 
 \paragraph{Zaokrouhlování}
 
- Při matematických operacích Sass poskytuje volbu přesnosti zaokrouhlení u desetinných míst. Toto se užitečné jeví především při použití fluidního layoutu.
-Sass: 3, LESS: 0, Stylus:0
+ Při matematických operacích \gls{Sass} poskytuje volbu přesnosti zaokrouhlení u desetinných míst. Toto se užitečné jeví především při použití fluidního layoutu.
+\gls{Sass}: 3, LESS: 0, Stylus:0
 \paragraph{Konverze do vlastní syntaxe}
 
- Všechny tři preprocesory umožňují dokonce konverzi CSS do své syntaxe, ale žádný nenahradí opakované hodnoty např. proměnnými. Stylus nezanořuje bloky do sebe.
+ Všechny tři preprocesory umožňují dokonce konverzi \gls{CSS} do své syntaxe, ale žádný nenahradí opakované hodnoty např. proměnnými. Stylus nezanořuje bloky do sebe.
 \scriptsize
 \begin{verbatim}
 stylus --css < test.css > test.styl
 \end{verbatim}
 \normalsize
 LESS tento nátroj zvaný LESSify\footnote{Na internetu je dostupný online konvertor \url{http://leafo.net/lessphp/lessify/}.} oficálně nepodporuje. Jde zatím o~vývojovou verzi, ale oproti preprocesoru Stylus dokáže rozpoznat bloky, které k sobě patří a~zanořit je. To už je mnohem použitelnější, potřebuje-li vývojář přenášet různé styly např. z dřívějších projektů. 
-Sass umí také zanořovat, pokud css soubor obsahuje komentáře, kompilátor se s~ním bezchybně nepopere. Sice vše zanoří správně, ovšem způsobí zakomentování celého kódu od bloku, kde se poprvé vyskytl. Bohužel také konvertuje do syntaxe bez závorek a~středníků, což může být pro někoho překážka. 
+\gls{Sass} umí také zanořovat, pokud css soubor obsahuje komentáře, kompilátor se s~ním bezchybně nepopere. Sice vše zanoří správně, ovšem způsobí zakomentování celého kódu od bloku, kde se poprvé vyskytl. Bohužel také konvertuje do syntaxe bez závorek a~středníků, což může být pro někoho překážka. 
 
 \scriptsize
 \begin{verbatim}
 sass-convert test.css test.scss
 \end{verbatim}
 \normalsize
-LESS:3, Sass: 2, Stylus:1
+LESS:3, \gls{Sass}: 2, Stylus:1
 \paragraph{Interaktivní režim}
 
  Za zmínku stojí interaktivní mód, jenž nabízí Stylus. Na příkazové řádce lze na výstupu dostat, jak bude např. vypadat určitá barva:
@@ -942,7 +960,7 @@ LESS:3, Sass: 2, Stylus:1
 	\label{imgStyl2}
 \end{figure}
 
-Stylus: 3, Sass: 0, LESS: 0
+Stylus: 3, \gls{Sass}: 0, LESS: 0
 
 
 
@@ -964,7 +982,7 @@ Stylus: 3, Sass: 0, LESS: 0
 
 \paragraph{Hodnocení}
 
-Z výsledného hodnocení plynou dvě věci. Za prvé, jde vidět, že Sass se vývoji věnuje již několik let a~obsahuje oproti ostatním nejvíce nástrojů z hodnocených. Za druhé, LESS dokazuje, že i~když má nástrojů oproti konkurentům méně, jsou použitelnější a~uživatelsky přívětivější. Stylus má ve kvalitě co dohánět, ale je na slibné cestě (tab. \ref{tab:pre}).
+Z výsledného hodnocení plynou dvě věci. Za prvé, jde vidět, že \gls{Sass} se vývoji věnuje již několik let a~obsahuje oproti ostatním nejvíce nástrojů z hodnocených. Za druhé, LESS dokazuje, že i~když má nástrojů oproti konkurentům méně, jsou použitelnější a~uživatelsky přívětivější. Stylus má ve kvalitě co dohánět, ale je na slibné cestě (tab. \ref{tab:pre}).
 
 
 
@@ -972,13 +990,13 @@ Z výsledného hodnocení plynou dvě věci. Za prvé, jde vidět, že Sass se v
 \section{Integrace CSS preprocesorů do CMS systému}
 \label{sec:cms}
 
-Na poli redakčních systémů neboli CMS\footnote{Content Management System - slouží pro správu webového obsahu.} existují implementace kompilátoru CSS preprocesorů uvnitř systémů, ale lze je najít i~v~samotných PHP frameworcích (např. Symfony). Pro účely této bakalářské práce byl vybrán open source redakční systém Venne:CMS\footnote{Celý projekt i~s moduly je volně ke stažení na \url{http://github.com/venne}.} (dále jen Venne). Tento redakční systém postavený na Nette frameworku se vyznačuje vysokou modularitou a~cílením jak na uživatele, tak samotné vývojáře.
+Na poli redakčních systémů neboli \gls{CMS} existují implementace kompilátoru \gls{CSS} preprocesorů uvnitř systémů, ale lze je najít i~v~samotných \gls{PHP} frameworcích (např. Symfony). Pro účely této bakalářské práce byl vybrán open source redakční systém Venne:CMS\footnote{Celý projekt i~s moduly je volně ke stažení na \url{http://github.com/venne}.} (dále jen Venne). Tento redakční systém postavený na Nette frameworku se vyznačuje vysokou modularitou a~cílením jak na uživatele, tak samotné vývojáře.
 
 
 
 \subsection{Motivace}
 
-Integrovaný CSS preprocesor umožní psát styly v~dynamickém jazyce pro šablony přímo v~CMS tak, aby kompilace mohla probíhat přímo online na daném hostingu. Je možné tedy měnit styly pro webové rozhraní přímo ve vybraném preprocesorovém jazyce. 
+Integrovaný \gls{CSS} preprocesor umožní psát styly v~dynamickém jazyce pro šablony přímo v~\gls{CMS} tak, aby kompilace mohla probíhat přímo online na daném hostingu. Je možné tedy měnit styly pro webové rozhraní přímo ve vybraném preprocesorovém jazyce. 
 
 Jako užitečná pomůcka se to projeví zejména ve chvíli, kdy správce webu nemá u sebe svou vývojovou verzi a~je nutné rychle zasáhnout a~opravit nějakou chybu či nedostatek. V opačném případě na localhostu usnadní vývojáři čas tím, že nemusí stále spouštět příkaz na kompilaci souborů při každé malé změně. Modul to vyřeší za něj. 
 
@@ -986,18 +1004,18 @@ Jako užitečná pomůcka se to projeví zejména ve chvíli, kdy správce webu 
 
 \subsection{Realizace}
 
-K vytvoření jednotlivých modulů, které nám zajistí kompilaci potřebujeme PHP kompilátor pro daný preprocesor. Tyto kompilátory dnes pro Sass i~LESS existují. U LESS je to \textit{lessphp} a~u Sass \textit{phpsass}. Pro Stylus zatím php kompilátor neexistuje.
+K vytvoření jednotlivých modulů, které nám zajistí kompilaci potřebujeme \gls{PHP} kompilátor pro daný preprocesor. Tyto kompilátory dnes pro \gls{Sass} i~LESS existují. U LESS je to \textit{lessphp} a~u \gls{Sass} \textit{phpsass}. Pro Stylus zatím php kompilátor neexistuje.
  
-Základem modulu ovládající kompilaci je vytvoření makra fungujícího v~šablonovacím systému CMS. Makra ve Venne mají tuto podobu:
+Základem modulu ovládající kompilaci je vytvoření makra fungujícího v~šablonovacím systému \gls{CMS}. Syntaxe makra byla zvolena obdobná, jako u maker \textit{css} a \textit{js}, které jsou standardně dostupné:
 \scriptsize
 \begin{verbatim}
 {pojmenovani_makra @NazevModul/cesta_k_souboru/nazev_souboru.pripona}
 \end{verbatim}
 \normalsize
 
-Označením \verb#@NazevModul# v~tomto případě rozumíme modul pro konkrétní webovou stránku, ve kterém se nachází zejména  šablona a~dále všechny potřebné soubory k zobrazení layoutu a~rozhraní stránky - tzn. obrázky, styly, fonty a~nyní i~soubory preprocesorového jazyka. Cestu k souboru určujeme absolutně od tohoto modulu až k samotnému souboru.
+Označením \verb#@NazevModul# v~tomto případě rozumíme modul pro konkrétní webovou stránku, ve kterém se nachází zejména  šablona a~dále všechny potřebné soubory k zobrazení layoutu a~rozhraní stránky - tzn. obrázky, styly, fonty a~nyní i~soubory preprocesorového jazyka. Cestu k souboru určujeme absolutně od tohoto modulu až k samotnému souboru. [https://github.com/Venne/venne-docs/blob/master/framework/macros.md]
 
-Aby byly dodrženy určité dobré zvyky a~důslednost v~daném redakčním systému, do implementace bylo zahrnuto vytváření adresáře v~mezipaměti, kam se následně zkompilovaný soubor ukládá. Není totiž žádoucí, aby se soubor kompiloval při každém načítání stránky, ale pouze při kompilaci šablony, kde je umístěné zmíněné makro. (Uvažujeme-li však nastavení CMS v~debugovacím módu, makro rozliší tuto skutečnost a~zkompiluje less soubory vždy při nějaké změně CSS.)  
+Aby byly dodrženy určité dobré zvyky a~důslednost v~daném redakčním systému, do implementace bylo zahrnuto vytváření adresáře v~mezipaměti, kam se následně zkompilovaný soubor ukládá. Není totiž žádoucí, aby se soubor kompiloval při každém načítání stránky, ale pouze při kompilaci šablony, kde je umístěné zmíněné makro. (Uvažujeme-li však nastavení \gls{CMS} v~debugovacím módu, makro rozliší tuto skutečnost a~zkompiluje less soubory vždy při změně \gls{CSS} souboru.)  
 
 Část názvu souboru se vygeneruje jako hash cesty k souboru a~data poslední změny. Toto nám zaručí unikátní název~souboru. Nestane se, aby se do adresáře umístily dva shodně nazvané soubory a~jelikož celá cesta k souboru může být příliš dlouhá, vyřeší toto hash. Hash se vygeneruje vždy stejně dlouhá.
 
@@ -1013,7 +1031,7 @@ V případě makra pro less soubory bude zápis v~šabloně vypadat následovně
 {less @NazevModul/cesta_k_souboru/style.less}
 \end{verbatim}
 \normalsize
-Po kompilaci less souboru a~zpracování makra dostaneme v~HTML stránce nalinkovaný css soubor:
+Po kompilaci less souboru a~zpracování makra dostaneme v~\gls{HTML} stránce nalinkovaný css soubor:
 \scriptsize
 \begin{verbatim}
 <link rel="stylesheet"
@@ -1035,7 +1053,7 @@ $less = new \lessc();
 $less->compileFile($in, $out); 
 \end{verbatim}
 \normalsize
-Jelikož se redakční systém Venne dá ovládat z příkazové řádky (má v~sobě zabudovanou konzoli z frameworku Symfony), do modulu byl implementován také příkaz, který kompilaci zajistí bez nutnosti instalace kompilátoru LESS do uživatelova počítače. Implementace je poněkud jednodušší, kompilaci je však nutné ošetřit vyhozením výjimky a~informováním uživatele o~případné chybě:
+Jelikož se redakční systém Venne dá ovládat z příkazové řádky (má v~sobě zabudovanou konzoli z frameworku Symfony), do modulu byl implementován také příkaz, který kompilaci zajistí bez nutnosti instalace kompilátoru LESS do uživatelova počítače [https://github.com/Venne/venne-docs/blob/master/framework/commands.md]. Implementace je poněkud jednodušší, kompilaci je však nutné ošetřit vyhozením výjimky a~informováním uživatele o~případné chybě:
 \scriptsize
 \begin{verbatim}
 $less = new \lessc();
@@ -1047,13 +1065,13 @@ try {
 }
 \end{verbatim}
 \normalsize
-V případě makra se toto řešit nemusí, neboť Nette vyhazuje výjimky automaticky v~nástroji zvaném Laděnka.
+V případě makra se toto řešit nemusí, neboť Nette vyhazuje výjimky automaticky v~nástroji zvaném Tracy (dříve Laděnka).
 
 
 
 \subsection{Modul Sass}
 
-Logika zpracování souboru s~obsahem preprocesorového jazyka bude při zavedení podpory každého dalšího procesoru stejná. Lišit se bude v~kompilovacím příkazu a~drobnostech, které implementace jednotlivého parseru odlišuje. U Sass makra použijeme následující:	
+Logika zpracování souboru s~obsahem preprocesorového jazyka bude při zavedení podpory každého dalšího procesoru stejná. Lišit se bude v~kompilovacím příkazu a~drobnostech, které implementace jednotlivého parseru odlišuje. U \gls{Sass} makra použijeme následující:	
 
 \scriptsize
 \begin{verbatim}
@@ -1076,13 +1094,13 @@ try {
 }
 \end{verbatim}
 \normalsize
-Uživatelé redakčního systému, kteří si přejí používat k vývoji CSS preprocesor mají nyní na výběr z LESS nebo Sass jazyka podle jejich vlastních preferencí. Oba z modulů jsou dostupné na Githubu. Do budoucna se určitě počítá s~vytvořením i~modulu pro Stylus, jakmile se pro něj objeví PHP kompilátor.
+Uživatelé redakčního systému, kteří si přejí používat k vývoji \gls{CSS} preprocesor mají nyní na výběr z LESS nebo \gls{Sass} jazyka podle jejich vlastních preferencí. Oba z modulů jsou dostupné na Githubu. Do budoucna se určitě počítá s~vytvořením i~modulu pro Stylus, jakmile se pro něj objeví \gls{PHP} kompilátor.
 
 
 \begin{conclusion}
-	Čtyři různé CSS frameworky mi rozšířily obzory a~poskytly znalosti, na kterých bude snadné stavět další. Zjistila jsem, že na počátku každého projektu automaticky vzniká potřeba ujasnit si kritéria, která webové rozhraní má slpňovat a~která očekávám od použitých nástrojů. 
+	Čtyři různé \gls{CSS} frameworky mi rozšířily obzory a~poskytly znalosti, na kterých bude snadné stavět další. Zjistila jsem, že na počátku každého projektu automaticky vzniká potřeba ujasnit si kritéria, která webové rozhraní má slpňovat a~která očekávám od použitých nástrojů. 
 
-Technologie se navzájem doplňují a~podporují jedna druhou. Proto i~v~této práci byla snaha zaznamenat souvislosti mezi CSS preprocesory a~frameworky. Čím více jsou technologie mezi sebou podporované, tím více vývojáři usnadní práci. Vývojáři často argumentují výtkami, jimiž obhajují, proč nepoužívají modernější nástroje. Tato práce však většinu dokázala vyvrátit pouhými zjištěnými poznatky, což považuji za úspěch. 
+Technologie se navzájem doplňují a~podporují jedna druhou. Proto i~v~této práci byla snaha zaznamenat souvislosti mezi \gls{CSS} preprocesory a~frameworky. Čím více jsou technologie mezi sebou podporované, tím více vývojáři usnadní práci. Vývojáři často argumentují výtkami, jimiž obhajují, proč nepoužívají modernější nástroje. Tato práce však většinu dokázala vyvrátit pouhými zjištěnými poznatky, což považuji za úspěch. 
 
 Bakalářská práce je pouhým odrazem v~dané problematice. Preprocesory a~frameworky mi přišla natolik zajímavá, že v~jejím zkoumání neustanu, budu otestované sledovat a~další zkoušet a~používat.  
 
@@ -1115,7 +1133,7 @@ Bakalářská práce je pouhým odrazem v~dané problematice. Preprocesory a~fra
 	\begin{center}
 	\includegraphics[scale=0.7]{images/image19.png}
 	\end{center}
-	\caption[Poznatky YAMLu]{Poznatky YAMLu: 1.~Přestože je YAML primárně grid  systém, obsahuje i~pohodlné javascriptové přepínání tabů. 2.~Bohužel YAML nabízí pouze tři základní délky inputů ve formuláři. Není tedy příliš přizpůsobivý potřebám uživatele. 3.~Přestože do CSS nebylo nijak zasahováno a~HTML standardně použito podle předpokladů YAMLu, checkboxy se rozhodily do nového sloupce křivě.}
+	\caption[Poznatky YAMLu]{Poznatky YAMLu: 1.~Přestože je YAML primárně grid  systém, obsahuje i~pohodlné javascriptové přepínání tabů. 2.~Bohužel YAML nabízí pouze tři základní délky inputů ve formuláři. Není tedy příliš přizpůsobivý potřebám uživatele. 3.~Přestože do \gls{CSS} nebylo nijak zasahováno a~\gls{HTML} standardně použito podle předpokladů YAMLu, checkboxy se rozhodily do nového sloupce křivě.}
 	\label{imgCom}
 \end{figure}
 
@@ -1207,7 +1225,8 @@ Bakalářská práce je pouhým odrazem v~dané problematice. Preprocesory a~fra
 
 %\chapter{Seznam použitých zkratek}
 \nocite{*}
-\printglossaries
+%\printglossaries
+\printglossary[type=acronym,title=]
 %\begin{description}
 %	\item[GUI] Graphical user interface
 %	\item[XML] Extensible markup language
