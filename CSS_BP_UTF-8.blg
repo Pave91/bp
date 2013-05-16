@@ -28,7 +28,6 @@ I was expecting a `,' or a `}'---line 153 of file mybibliographyfile.bib
  :     year = "2010",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "typo2"
 Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
 Warning--empty journal in typo1
 Warning--empty year in typo1
@@ -42,45 +41,45 @@ Warning--empty journal in dev
 Warning--empty year in dev
 Warning--empty journal in mqsup
 Warning--empty year in mqsup
-You've used 20 entries,
+You've used 21 entries,
             3151 wiz_defined-function locations,
-            744 strings with 7777 characters,
-and the built_in function-call counts, 6176 in all, are:
-= -- 396
-> -- 137
+            748 strings with 7890 characters,
+and the built_in function-call counts, 6455 in all, are:
+= -- 414
+> -- 144
 < -- 0
-+ -- 65
-- -- 38
-* -- 316
-:= -- 716
-add.period$ -- 35
-call.type$ -- 20
-change.case$ -- 76
++ -- 68
+- -- 40
+* -- 329
+:= -- 752
+add.period$ -- 37
+call.type$ -- 21
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 32
-duplicate$ -- 688
-empty$ -- 639
-format.name$ -- 40
-if$ -- 1274
+cite$ -- 33
+duplicate$ -- 718
+empty$ -- 668
+format.name$ -- 42
+if$ -- 1331
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 172
-newline$ -- 89
-num.names$ -- 32
-pop$ -- 427
+int.to.str$ -- 21
+missing$ -- 179
+newline$ -- 93
+num.names$ -- 34
+pop$ -- 444
 preamble$ -- 1
-purify$ -- 63
+purify$ -- 66
 quote$ -- 0
-skip$ -- 195
+skip$ -- 204
 stack$ -- 0
-substring$ -- 131
-swap$ -- 260
+substring$ -- 136
+swap$ -- 272
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
+type$ -- 82
 warning$ -- 12
-while$ -- 32
-width$ -- 22
-write$ -- 170
+while$ -- 34
+width$ -- 23
+write$ -- 178
 (There were 5 error messages)

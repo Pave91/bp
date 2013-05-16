@@ -7,7 +7,7 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Uk\IeC {\'a}zka fixn\IeC {\'\i }ho layoutu\cite {fix}}}{9}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Uk\IeC {\'a}zka fluidn\IeC {\'\i }ho layoutu \cite {fix}}}{9}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces V\IeC {\'y}sledky v\IeC {\'y}zkumu o~p\IeC {\v r}\IeC {\'\i }stupu na internet z r\IeC {\r u}zn\IeC {\'y}ch za\IeC {\v r}\IeC {\'\i }zen\IeC {\'\i }\cite {dev}}}{11}{figure.3.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces V\IeC {\'y}sledky v\IeC {\'y}zkumu o~p\IeC {\v r}\IeC {\'\i }stupu na internet z~r\IeC {\r u}zn\IeC {\'y}ch za\IeC {\v r}\IeC {\'\i }zen\IeC {\'\i }\cite {dev}}}{11}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Podpora media queries}}{12}{figure.3.4}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Sloupce typu \quotedblbase 123\textquotedblleft \cite {yaml}}}{19}{figure.4.1}
@@ -21,16 +21,16 @@
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Interaktivn\IeC {\'\i } m\IeC {\'o}d preprocesoru Stylus}}{38}{figure.5.4}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Nedokonal\IeC {\'a} typografie u YAMLu}}{47}{figure.A.1}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Responzivn\IeC {\'\i } web pomoc\IeC {\'\i } YAMLu}}{48}{figure.A.2}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Poznatky YAMLu}}{49}{figure.A.3}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Nedokonal\IeC {\'a} typografie u~frameworku YAML}}{47}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Responzivn\IeC {\'\i } web pomoc\IeC {\'\i } frameworku YAML}}{48}{figure.A.2}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Poznatky t\IeC {\'y}kaj\IeC {\'\i }c\IeC {\'\i } se frameworku YAML}}{49}{figure.A.3}
 \contentsline {figure}{\numberline {A.4}{\ignorespaces Uk\IeC {\'a}zka pou\IeC {\v z}it\IeC {\'y}ch komponent Bootstrapu}}{50}{figure.A.4}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Flexibiln\IeC {\'\i } obr\IeC {\'a}zek v Bootstrapu}}{51}{figure.A.5}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Responzivita Bootstrapu}}{52}{figure.A.6}
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Bootstrap: Navigace v~n\IeC {\'a}kupn\IeC {\'\i }m ko\IeC {\v s}\IeC {\'\i }ku podle p\IeC {\v r}edlohy Alzy}}{53}{figure.A.7}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Flexibiln\IeC {\'\i } obr\IeC {\'a}zek ve frameworku Bootstrap}}{51}{figure.A.5}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Responzivita frameworku Bootstrap}}{52}{figure.A.6}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Bootstrap: Navigace v~n\IeC {\'a}kupn\IeC {\'\i }m ko\IeC {\v s}\IeC {\'\i }ku podle p\IeC {\v r}edlohy Alza.cz}}{53}{figure.A.7}
 \contentsline {figure}{\numberline {A.8}{\ignorespaces Uk\IeC {\'a}zka zobrazen\IeC {\'\i } m\IeC {\v r}\IeC {\'\i }\IeC {\v z}ky na str\IeC {\'a}nce v~Baseline}}{53}{figure.A.8}
 \contentsline {figure}{\numberline {A.9}{\ignorespaces Baseline: Rozhozen\IeC {\'a} koncepce \IeC {\'u}\IeC {\v c}a\IeC {\v r}\IeC {\'\i }}}{53}{figure.A.9}
-\contentsline {figure}{\numberline {A.10}{\ignorespaces P\IeC {\v r}edloha z RollingStone.com pro vytvo\IeC {\v r}en\IeC {\'\i } 3 sloupc\IeC {\r u} v~jednom}}{54}{figure.A.10}
+\contentsline {figure}{\numberline {A.10}{\ignorespaces P\IeC {\v r}edloha z~RollingStone.com pro vytvo\IeC {\v r}en\IeC {\'\i } 3 sloupc\IeC {\r u} v~jednom}}{54}{figure.A.10}
 \contentsline {figure}{\numberline {A.11}{\ignorespaces Vyu\IeC {\v z}it\IeC {\'\i } 960 Grid System}}{54}{figure.A.11}
 \contentsline {figure}{\numberline {A.12}{\ignorespaces Horizont\IeC {\'a}ln\IeC {\'\i } banner}}{55}{figure.A.12}
 \contentsline {figure}{\numberline {A.13}{\ignorespaces Komponenta: Reklamn\IeC {\'\i } bannery fixn\IeC {\v e} pod\IeC {\'e}l layoutu vlevo a~vpravo.}}{55}{figure.A.13}

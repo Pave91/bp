@@ -15,7 +15,7 @@
 \contentsline {section}{\numberline {3.2}Responzivn\IeC {\'\i } web design}{10}{section.3.2}
 \contentsline {section}{\numberline {3.3}Typografie}{12}{section.3.3}
 \contentsline {section}{\numberline {3.4}Ovl\IeC {\'a}dac\IeC {\'\i } prvky a~formul\IeC {\'a}\IeC {\v r}e}{13}{section.3.4}
-\contentsline {section}{\numberline {3.5}Soulad s pou\IeC {\v z}itelnost\IeC {\'\i } webu}{14}{section.3.5}
+\contentsline {section}{\numberline {3.5}Soulad s~pou\IeC {\v z}itelnost\IeC {\'\i } webu}{14}{section.3.5}
 \contentsline {chapter}{\chapternumberline {4}Testov\IeC {\'a}n\IeC {\'\i } framework\IeC {\r u}}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Rozd\IeC {\v e}len\IeC {\'\i } framework\IeC {\r u} podle zam\IeC {\v e}\IeC {\v r}en\IeC {\'\i }}{15}{section.4.1}
 \contentsline {section}{\numberline {4.2}Pou\IeC {\v z}itelnost CSS framework\IeC {\r u} v~praxi}{16}{section.4.2}
@@ -40,14 +40,14 @@
 \contentsline {paragraph}{Typografie}{24}{section*.19}
 \contentsline {paragraph}{Ovl\IeC {\'a}dac\IeC {\'\i } prvky}{25}{section*.20}
 \contentsline {paragraph}{Potenci\IeC {\'a}l vyu\IeC {\v z}it\IeC {\'\i }}{25}{section*.21}
-\contentsline {paragraph}{Hodnocen\IeC {\'\i }}{25}{section*.22}
+\contentsline {paragraph}{Hodnocen\IeC {\'\i }}{26}{section*.22}
 \contentsline {subsection}{\numberline {4.2.6}960 Grid System}{26}{subsection.4.2.6}
 \contentsline {paragraph}{Layout}{26}{section*.23}
 \contentsline {paragraph}{Responzivn\IeC {\'\i } web design}{27}{section*.24}
 \contentsline {paragraph}{Typografie}{28}{section*.25}
 \contentsline {paragraph}{Potenci\IeC {\'a}l vyu\IeC {\v z}it\IeC {\'\i }}{28}{section*.26}
 \contentsline {section}{\numberline {4.3}N\IeC {\'a}vrh a~realizace komponenty do~CSS~framework\IeC {\r u}}{28}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}N\IeC {\'a}vrh}{28}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}N\IeC {\'a}vrh}{29}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Pou\IeC {\v z}it\IeC {\'\i } v~praxi}{29}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Zhodnocen\IeC {\'\i }}{30}{subsection.4.3.3}
 \contentsline {chapter}{\chapternumberline {5}CSS preprocesory}{31}{chapter.5}
@@ -59,7 +59,7 @@
 \contentsline {section}{\numberline {5.3}Hodnocen\IeC {\'\i } CSS preprocesor\IeC {\r u}}{35}{section.5.3}
 \contentsline {paragraph}{Form\IeC {\'a}t v\IeC {\'y}stupu}{35}{section*.27}
 \contentsline {paragraph}{Odla\IeC {\v d}ov\IeC {\'a}n\IeC {\'\i } chyb}{35}{section*.28}
-\contentsline {paragraph}{Hromadn\IeC {\'a} kompilace a~sledov\IeC {\'a}n\IeC {\'\i } zm\IeC {\v e}n}{36}{section*.29}
+\contentsline {paragraph}{Hromadn\IeC {\'a} kompilace a~sledov\IeC {\'a}n\IeC {\'\i } zm\IeC {\v e}n}{37}{section*.29}
 \contentsline {paragraph}{Zaokrouhlov\IeC {\'a}n\IeC {\'\i }}{37}{section*.30}
 \contentsline {paragraph}{Konverze do vlastn\IeC {\'\i } syntaxe}{37}{section*.31}
 \contentsline {paragraph}{Interaktivn\IeC {\'\i } re\IeC {\v z}im}{37}{section*.32}
@@ -72,5 +72,5 @@
 \contentsline {chapter}{Z{\' a}v{\v e}r}{43}{chapter*.34}
 \contentsline {chapter}{Literatura}{45}{section*.36}
 \contentsline {appendix}{\chapternumberline {A}Obr\IeC {\'a}zky}{47}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Seznam pou{\v z}it{\' y}ch zkratek}{57}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}Seznam pou\IeC {\v z}it\IeC {\'y}ch zkratek}{57}{appendix.B}
 \contentsline {appendix}{\chapternumberline {C}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD}{59}{appendix.C}

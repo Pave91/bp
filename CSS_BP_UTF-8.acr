@@ -1,6 +1,60 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
 \glsgroupheading{C}\relax \glsresetentrylist %
-\glossaryentryfield{CSS}{\glsnamefont{CSS}}{Cascading Style Sheet}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{4}}}%
+\glossaryentryfield{CMS}{\glsnamefont{\acronymfont {CMS}}}{(Content Management System) Syst\IeC {\'e}m, kter\IeC {\'y} slou\IeC {\v z}\IeC {\'\i } pro spr\IeC {\'a}vu webov\IeC {\'e}ho obsahu}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{38\delimN 39}}}%
+\glossaryentryfield{CSS}{\glsnamefont{\acronymfont {CSS}}}{(Cascading Style Sheets). Jazyk navr\IeC {\v z}en\IeC {\'y} W3C organizac\IeC {\'\i } p\IeC {\v r}edstavuje jednoduch\IeC {\'y} mechanismus p\IeC {\v r}id\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } styl\IeC {\r u} (nap\IeC {\v r}. font\IeC {\r u}, barev, mezer) do webov\IeC {\'y}ch dokument\IeC {\r u}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{3\delimR 6}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{10\delimN 11}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{13\delimR 16}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{18\delimR 21}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{24}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{27}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{31\delimR 34}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{37\delimR 39}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{41}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{43}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{49}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossaryentryfield{DSL}{\glsnamefont{\acronymfont {DSL}}}{(Dynamic Stylesheet language) Dynamick\IeC {\'y} jazyk}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{4}}}\glsgroupskip
+\glsgroupheading{H}\relax \glsresetentrylist %
+\glossaryentryfield{HTML}{\glsnamefont{\acronymfont {HTML}}}{(HyperText Markup Language) Zna\IeC {\v c}kovac\IeC {\'\i } jazyk pou\IeC {\v z}\IeC {\'\i }van\IeC {\'y} pro tvorbu webov\IeC {\'y}ch str\IeC {\'a}nek}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{3}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{10}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{14}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{17}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{20}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{27}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{29\delimN 30}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{33}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{40}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{49}}}\glsgroupskip
+\glsgroupheading{I}\relax \glsresetentrylist %
+\glossaryentryfield{IE}{\glsnamefont{\acronymfont {IE}}}{(Internet Explorer) Internetov\IeC {\'y} prohl\IeC {\'\i }\IeC {\v z}e\IeC {\v c}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{5}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{11}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{18}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossaryentryfield{PHP}{\glsnamefont{\acronymfont {PHP}}}{(PHP: Hypertext Preprocessor) Hypertextov\IeC {\'y} preprocesor. Jedn\IeC {\'a} se o~skriptovac\IeC {\'\i } jazyk, kter\IeC {\'y} je pou\IeC {\v z}\IeC {\'\i }v\IeC {\'a}n k~v\IeC {\'y}voji webov\IeC {\'y}ch str\IeC {\'a}nek. PHP se prov\IeC {\'a}d\IeC {\'\i } na stran\IeC {\v e} serveru}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{31}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{34}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{38\delimN 39}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{41}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossaryentryfield{Sass}{\glsnamefont{\acronymfont {Sass}}}{(Syntactically Awesome Stylesheets) CSS preprocesor}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{20}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{31\delimR 37}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{39}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{41}}}\glsgroupskip
+\glsgroupheading{W}\relax \glsresetentrylist %
+\glossaryentryfield{W3C}{\glsnamefont{\acronymfont {W3C}}}{(World Wide Web Consortium) Organizace vyv\IeC {\'\i }jej\IeC {\'\i }c\IeC {\'\i } webov\IeC {\'e} standardy}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{13\delimN 14}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{18}}}\glsgroupskip
+\glsgroupheading{Y}\relax \glsresetentrylist %
+\glossaryentryfield{YAML}{\glsnamefont{\acronymfont {YAML}}}{(Yet Another Multicolumn Layout) CSS framework}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{6}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{16}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{18\delimR 22}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{28\delimN 29}}}%
 \end{theglossary}\glossarypostamble

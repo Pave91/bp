@@ -45,6 +45,10 @@ Knight, K.: Fixed vs. Fluid vs. Elastic Layout: What’s The Right One For You?
   2009, [cit. 2013-03-24].
 \urlprefix\biburl{<http://coding.smashingmagazine.com/2009/06/02/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/>}
 
+\bibitem{ven}
+Kříž, J.: \emph{Vlastní Latte makra (macros)}. 2013.
+\urlprefix\biburl{<https://github.com/Venne/venne-docs/blob/master/framework/macros.md>}
+
 \bibitem{res}
 Marcotte, E.: \emph{Responsive Web Design}. Jeffrey Zeldman, 2011, ISBN
   978-0-9844425-7-7, [cit. 2013-03-24].

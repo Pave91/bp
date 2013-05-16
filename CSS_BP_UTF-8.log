@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.5.8)  16 MAY 2013 18:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.5.8)  16 MAY 2013 23:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1075,26 +1075,26 @@ Package glossaries Info: Writing glossary file CSS_BP_UTF-8.acn on input line 1
 (./CSS_BP_UTF-8.aux)
 \openout1 = `CSS_BP_UTF-8.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 45.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box37
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 45.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1106,10 +1106,10 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 38.
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
 (./CSS_BP_UTF-8.out) (./CSS_BP_UTF-8.out)
 \@outlinefile=\write7
 \openout7 = `CSS_BP_UTF-8.out'.
@@ -1122,39 +1122,39 @@ LaTeX Info: Redefining \nameref on input line 38.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 45.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 38.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 45.
 
 (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 38.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 45.
 
 
 (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 38.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 45.
 
 
 (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 38.
+(Font)              <12> on input line 45.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 38.
+(Font)              <8> on input line 45.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 38.
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+(Font)              <6> on input line 45.
+LaTeX Font Info:    Try loading font information for U+msa on input line 45.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+LaTeX Font Info:    Try loading font information for U+msb on input line 45.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1162,10 +1162,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <cvut-logo-bw.pdf, id=122, 91.34125pt x 69.25874pt>
 File: cvut-logo-bw.pdf Graphic file (type pdf)
  <use cvut-logo-bw.pdf>
-Package pdftex.def Info: cvut-logo-bw.pdf used on input line 38.
+Package pdftex.def Info: cvut-logo-bw.pdf used on input line 45.
 (pdftex.def)             Requested size: 61.2814pt x 46.4665pt.
 
-Underfull \hbox (badness 10000) in alignment at lines 38--38
+Underfull \hbox (badness 10000) in alignment at lines 45--45
 [][] 
  []
 
@@ -1173,39 +1173,39 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 \begin{document}
+l.45 \begin{document}
                       [1 <./cvut-logo-bw.pdf>]pdfTeX warning (ext4): destinatio
 n with the same identifier (name{page.ii}) has been already used, duplicate ign
 ored
 <to be read again> 
                    \relax 
-l.38 \begin{document}
+l.45 \begin{document}
                       [2
 
 ]
 
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 38.
+(Font)              using `T1/lmr/bx/n' instead on input line 45.
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 38.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 45.
 (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/bx/sc' undefined
-(Font)              using `T1/lmss/bx/n' instead on input line 38.
+(Font)              using `T1/lmss/bx/n' instead on input line 45.
 
 [5
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 38.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 45.
  (/usr/share/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 38.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 45.
 
-Overfull \hbox (6.86626pt too wide) in paragraph at lines 38--38
+Overfull \hbox (6.86626pt too wide) in paragraph at lines 45--45
 \T1/lmr/m/n/12 Ostrá, Pavlína. \T1/lmr/m/it/12 Ana-lýza CSS pre-pro-ce-sor· a f
 ra-mework· usnad-¬u-jí-cích stavbu
  []
@@ -1268,32 +1268,32 @@ Dictionary: glossaries-dictionary, Language: English
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 55.
+(hyperref)                removing `\textring' on input line 73.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 64.
+(Font)              <10> on input line 82.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 64.
+(Font)              <7> on input line 82.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 64.
-
-Overfull \hbox (0.40219pt too wide) in paragraph at lines 75--76
-\T1/lmr/m/n/12 Lan-gu-age, dále DSL). Umoº-¬uje dy-na-mické pro-gra-mo-vání v s
-a-mot-ném CSS.
- []
-
+(Font)              <5> on input line 82.
 [3]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 80.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 98.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [4]
+)
+Overfull \hbox (1.56587pt too wide) in paragraph at lines 98--100
+\T1/lmr/m/n/12 P°.: Kód na-psaný v LESS[][][] vy-u-ºí-va-jící pro-m¥nné, za-no-
+°o-vání, ba-revné funkce
+ []
+
+[4]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 108.
+(hyperref)                removing `\textasciicaron' on input line 126.
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 110--110
+Underfull \hbox (badness 1152) in paragraph at lines 128--128
 [][] [][][]\T1/lmr/m/n/10 Ke shléd-nutí nap°. na []$\T1/lmtt/m/n/10 http : / / 
 usablica\OML/lmm/m/it/10 :\T1/lmtt/m/n/10 github\OML/lmm/m/it/10 :\T1/lmtt/m/n/
 10 com / front -[] end -[] frameworks /
@@ -1302,62 +1302,62 @@ usablica\OML/lmm/m/it/10 :\T1/lmtt/m/n/10 github\OML/lmm/m/it/10 :\T1/lmtt/m/n/
 [5
 
 ]
-Overfull \hbox (7.59639pt too wide) in paragraph at lines 112--113
+Overfull \hbox (7.59639pt too wide) in paragraph at lines 130--131
 \T1/lmr/m/n/12 p°í-pa-dech. B¥-hem vý-voje webo-vého roz-hraní tak vý-vo-já° zj
 istí, ºe fra-meworku
  []
 
 
-Overfull \hbox (4.22356pt too wide) in paragraph at lines 121--122
+Overfull \hbox (4.22356pt too wide) in paragraph at lines 139--140
 []\T1/lmr/m/n/12 Volba správ-ného fra-meworku bude zá-vi-set na kon-krét-ních f
 ak-to-rech (pod-
  []
 
 [6]
-Overfull \hbox (9.18066pt too wide) in paragraph at lines 141--155
+Overfull \hbox (9.18066pt too wide) in paragraph at lines 159--173
  [][] 
  []
 
 [7
 
 ]
-Underfull \hbox (badness 1490) in paragraph at lines 169--169
+Underfull \hbox (badness 1490) in paragraph at lines 187--187
 [][] [][][]\T1/lmr/m/n/10 Graf s nej-po-u-ºí-va-n¥j-²ími roz-li-²e-ními na ad-r
 ese []$\T1/lmtt/m/n/10 http : / / gs\OML/lmm/m/it/10 :\T1/lmtt/m/n/10 statcount
 er\OML/lmm/m/it/10 :\T1/lmtt/m/n/10 com /
  []
 
-<images/image06.png, id=352, 501.875pt x 376.40625pt>
+<images/image06.png, id=378, 501.875pt x 376.40625pt>
 File: images/image06.png Graphic file (type png)
  <use images/image06.png>
-Package pdftex.def Info: images/image06.png used on input line 173.
+Package pdftex.def Info: images/image06.png used on input line 191.
 (pdftex.def)             Requested size: 250.93687pt x 188.20265pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image21.jpg, id=358, 501.875pt x 376.40625pt>
+<images/image21.jpg, id=384, 501.875pt x 376.40625pt>
 File: images/image21.jpg Graphic file (type jpg)
  <use images/image21.jpg>
-Package pdftex.def Info: images/image21.jpg used on input line 185.
+Package pdftex.def Info: images/image21.jpg used on input line 203.
 (pdftex.def)             Requested size: 250.93687pt x 188.20265pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8] [9 <./images/image06.png> <./images/image21.jpg>]
-<images/image01.png, id=379, 602.25pt x 394.47375pt>
+<images/image01.png, id=405, 602.25pt x 394.47375pt>
 File: images/image01.png Graphic file (type png)
  <use images/image01.png>
-Package pdftex.def Info: images/image01.png used on input line 203.
+Package pdftex.def Info: images/image01.png used on input line 221.
 (pdftex.def)             Requested size: 421.57211pt x 276.12973pt.
 
-Overfull \hbox (38.57211pt too wide) in paragraph at lines 203--204
+Overfull \hbox (38.57211pt too wide) in paragraph at lines 221--222
  [] 
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 205--205
+Underfull \hbox (badness 1895) in paragraph at lines 223--223
 []\T1/lmr/m/n/12 Obrázek 3.3: []Výsledky vý-zkumu o p°í-stupu na in-ter-net z r
 ·z-ných
  []
@@ -1365,28 +1365,31 @@ Underfull \hbox (badness 1895) in paragraph at lines 205--205
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10] <images/image20.png, id=394, 733.23938pt x 543.14258pt>
+[10] <images/image20.png, id=424, 733.23938pt x 543.14258pt>
 File: images/image20.png Graphic file (type png)
 
 <use images/image20.png>
-Package pdftex.def Info: images/image20.png used on input line 238.
+Package pdftex.def Info: images/image20.png used on input line 256.
 (pdftex.def)             Requested size: 403.28291pt x 298.72934pt.
 
-Overfull \hbox (20.28291pt too wide) in paragraph at lines 238--239
+Overfull \hbox (20.28291pt too wide) in paragraph at lines 256--257
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11 <./images/image01.png>] [12 <./images/image20.png>]
+[11 <./images/image01.png>]
+Underfull \vbox (badness 3199) has occurred while \output is active []
+
+ [12 <./images/image20.png>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 262.
+(hyperref)                removing `\textasciicaron' on input line 280.
 
 
-Overfull \hbox (0.73416pt too wide) in paragraph at lines 266--267
+Overfull \hbox (0.73416pt too wide) in paragraph at lines 284--285
 \T1/lmr/m/n/12 Podpora ovlá-da-cích prvk· je d·-le-ºitá z pros-tého d·-vodu -- 
 má-lo-která webová
  []
@@ -1395,10 +1398,10 @@ má-lo-která webová
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 290.
+(hyperref)                removing `\textring' on input line 309.
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 291--291
+Underfull \hbox (badness 1087) in paragraph at lines 310--310
 [][] [][][]\T1/lmr/m/n/10 ’iroké spek-trum fra-mework· a co pod-po-rují lze na-
 lézt nap°. na webu \T1/lmr/m/it/10 So-
  []
@@ -1406,22 +1409,22 @@ lézt nap°. na webu \T1/lmr/m/it/10 So-
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 309.
+(hyperref)                removing `\textasciicaron' on input line 328.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 309.
+(hyperref)                removing `\textring' on input line 328.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 309.
+(hyperref)                removing `\textasciicaron' on input line 328.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 309.
+(hyperref)                removing `\textasciicaron' on input line 328.
 
 [15
 
@@ -1429,16 +1432,22 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 321.
+(hyperref)                removing `\textring' on input line 340.
 
-[16] [17] <images/image05.png, id=451, 652.68843pt x 127.97812pt>
+
+Overfull \hbox (3.96288pt too wide) in paragraph at lines 354--355
+\T1/lmr/m/n/12 ter-ne-tový ob-chod Alza.cz, který po-sky-tuje do-sta-tek po-t°e
+b-ných prvk· k otes-
+ []
+
+[16] [17] <images/image05.png, id=511, 652.68843pt x 127.97812pt>
 File: images/image05.png Graphic file (type png)
 
 <use images/image05.png>
-Package pdftex.def Info: images/image05.png used on input line 389.
+Package pdftex.def Info: images/image05.png used on input line 408.
 (pdftex.def)             Requested size: 391.61609pt x 76.78745pt.
 
-Overfull \hbox (8.61609pt too wide) in paragraph at lines 389--390
+Overfull \hbox (8.61609pt too wide) in paragraph at lines 408--409
  [] 
  []
 
@@ -1446,58 +1455,71 @@ Overfull \hbox (8.61609pt too wide) in paragraph at lines 389--390
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18]
-Overfull \hbox (5.86961pt too wide) in paragraph at lines 403--404
+Overfull \hbox (5.86961pt too wide) in paragraph at lines 422--423
 \T1/lmr/m/n/12 prvk·. Cel-kov¥ nelze do-sáh-nout kla-sicky po-u-ºí-va-ných for-
 mu-lá-°o-vých vzhled·,
  []
 
 [19 <./images/image05.png>] [20] [21]
-Overfull \hbox (5.5023pt too wide) in paragraph at lines 474--475
+Overfull \hbox (5.5023pt too wide) in paragraph at lines 493--494
 \T1/lmr/m/n/12 je Bo-ot-strap p·-vodn¥ na-kó-do-ván, a v ko-ne£-ném sou-boru ob
 -sa-hu-jí-cím v²echny
  []
 
-<images/image13.png, id=507, 543.53062pt x 224.33812pt>
+<images/image13.png, id=585, 543.53062pt x 224.33812pt>
 File: images/image13.png Graphic file (type png)
 
 <use images/image13.png>
-Package pdftex.def Info: images/image13.png used on input line 510.
+Package pdftex.def Info: images/image13.png used on input line 529.
 (pdftex.def)             Requested size: 380.46883pt x 157.03561pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22] <images/image10.jpg, id=517, 501.875pt x 334.24875pt>
+[22] <images/image10.jpg, id=595, 501.875pt x 334.24875pt>
 File: images/image10.jpg Graphic file (type jpg)
 
 <use images/image10.jpg>
-Package pdftex.def Info: images/image10.jpg used on input line 523.
+Package pdftex.def Info: images/image10.jpg used on input line 542.
 (pdftex.def)             Requested size: 301.12732pt x 200.55078pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image17.jpg, id=520, 501.875pt x 334.24875pt>
+<images/image17.jpg, id=598, 501.875pt x 334.24875pt>
 File: images/image17.jpg Graphic file (type jpg)
  <use images/image17.jpg>
-Package pdftex.def Info: images/image17.jpg used on input line 530.
+Package pdftex.def Info: images/image17.jpg used on input line 549.
 (pdftex.def)             Requested size: 301.12732pt x 200.55078pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23 <./images/image13.png>] [24 <./images/image10.jpg>] [25 <./images/image17.j
-pg>] [26] [27]
+[23 <./images/image13.png>] [24 <./images/image10.jpg>]
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [25 <./images/image17.jpg>] [26] [27]
+Overfull \hbox (5.10246pt too wide) in paragraph at lines 679--680
+\T1/lmr/m/n/12 hro-mady se po-t°e-bují shod-nout na jed-not-ném smys-lu-pl-ném 
+lay-outu. 960 Grid
+ []
+
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 668.
+(hyperref)                removing `\textring' on input line 684.
 
 [28] [29] [30]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 703.
+(hyperref)                removing `\textring' on input line 719.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
+[][] [][][]\T1/lmr/m/n/10 Tento pre-pro-ce-sor má kom-pi-laci na-psa-nou pouze 
+v []PHP[][][] []$\T1/lmtt/m/n/10 http :
+ []
 
 [31
 
@@ -1506,7 +1528,7 @@ Package hyperref Warning: Composite letter `\textring+u'
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 797.
+(in both cases you will find help in the memoir manual). on input line 810.
 
 
 Overfull \vbox (0.85403pt too high) has occurred while \output is active []
@@ -1516,55 +1538,50 @@ Overfull \vbox (0.85403pt too high) has occurred while \output is active []
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 828.
+(hyperref)                removing `\textring' on input line 844.
 
 [34]
-Overfull \hbox (6.51318pt too wide) in paragraph at lines 872--873
+Overfull \hbox (6.51318pt too wide) in paragraph at lines 888--889
 []\T1/lmr/bx/n/12 Odla¤ování chyb[] \T1/lmr/m/n/12 Po-ho-dlné °e-²ení de-bu-go-
 va-cího ná-stroje po-sky-tuje LESS.
  []
 
-<images/image07.png, id=625, 322.05757pt x 43.50233pt>
+<images/image07.png, id=747, 322.05757pt x 43.50233pt>
 File: images/image07.png Graphic file (type png)
 
 <use images/image07.png>
-Package pdftex.def Info: images/image07.png used on input line 876.
+Package pdftex.def Info: images/image07.png used on input line 892.
 (pdftex.def)             Requested size: 322.05676pt x 43.50221pt.
 
-<images/image02.png, id=626, 243.15843pt x 152.06813pt>
+<images/image02.png, id=748, 243.15843pt x 152.06813pt>
 File: images/image02.png Graphic file (type png)
 
 <use images/image02.png>
-Package pdftex.def Info: images/image02.png used on input line 884.
+Package pdftex.def Info: images/image02.png used on input line 900.
 (pdftex.def)             Requested size: 243.15784pt x 152.06775pt.
 
-Overfull \hbox (21.8994pt too wide) in paragraph at lines 881--889
+Overfull \hbox (21.8994pt too wide) in paragraph at lines 897--905
 \T1/lmr/m/n/12 daný pro-blém nebo také chybn¥, tak jako na ob-rázku. Za vlast-n
 ostí []\T1/lmtt/m/n/12 font-weight
  []
 
-[35] <images/image22.png, id=635, 523.43126pt x 31.57426pt>
+[35] <images/image22.png, id=759, 332.58234pt x 38.59077pt>
 File: images/image22.png Graphic file (type png)
 
 <use images/image22.png>
-Package pdftex.def Info: images/image22.png used on input line 895.
-(pdftex.def)             Requested size: 523.42998pt x 31.57417pt.
-
-Overfull \hbox (147.22997pt too wide) in paragraph at lines 895--896
- [] 
- []
-
-[36 <./images/image07.png> <./images/image02.png> <./images/image22.png>]
-Overfull \hbox (0.78374pt too wide) in paragraph at lines 915--917
+Package pdftex.def Info: images/image22.png used on input line 911.
+(pdftex.def)             Requested size: 332.58151pt x 38.59067pt.
+ [36 <./images/image07.png> <./images/image02.png> <./images/image22.png>]
+Overfull \hbox (0.78374pt too wide) in paragraph at lines 931--933
 []\T1/lmr/bx/n/12 Zaokrouhlování[] \T1/lmr/m/n/12 P°i ma-te-ma-tic-kých ope-ra-
-cích Sass po-sky-tuje volbu p°es-
+cích [][]Sass[] po-sky-tuje volbu p°es-
  []
 
-<images/image18.png, id=643, 174.00932pt x 89.81126pt>
+<images/image18.png, id=775, 174.00932pt x 89.81126pt>
 File: images/image18.png Graphic file (type png)
 
 <use images/image18.png>
-Package pdftex.def Info: images/image18.png used on input line 939.
+Package pdftex.def Info: images/image18.png used on input line 955.
 (pdftex.def)             Requested size: 174.00888pt x 89.81104pt.
 
 
@@ -1573,40 +1590,46 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 972.
+(hyperref)                removing `\textring' on input line 988.
 
 [37] [38 <./images/image18.png>]
-Overfull \hbox (3.70653pt too wide) in paragraph at lines 998--999
+Overfull \hbox (3.70653pt too wide) in paragraph at lines 1014--1015
 \T1/lmr/m/n/12 krétní webo-vou stránku, ve kte-rém se na-chází zejména ²a-b-lon
 a a dále v²echny
  []
 
 
-Underfull \vbox (badness 1960) has occurred while \output is active []
+Underfull \vbox (badness 1082) has occurred while \output is active []
 
  [39]
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1054
+[][] [][][]\T1/lmr/m/n/10 Vytvo°eno podle ma-nu-álu []$\T1/lmtt/m/n/10 https : 
+/ / github\OML/lmm/m/it/10 :\T1/lmtt/m/n/10 com / Venne / venne -[] docs / blob
+ /
+ []
+
 [40] [41] [42
 
 ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1082.
+(hyperref)                removing `\textasciicaron' on input line 1098.
 
 
-Overfull \hbox (5.63806pt too wide) in paragraph at lines 1085--1086
+Overfull \hbox (5.63806pt too wide) in paragraph at lines 1101--1102
 []\T1/lmr/m/n/12 Technologie se na-vzá-jem do-pl-¬ují a pod-po-rují jedna dru-h
 ou. Proto i v této
  []
 
 
-Overfull \hbox (8.99197pt too wide) in paragraph at lines 1085--1086
+Overfull \hbox (8.99197pt too wide) in paragraph at lines 1101--1102
 \T1/lmr/m/n/12 práci byla snaha za-zna-me-nat sou-vis-losti mezi CSS pre-pro-ce
 -sory a fra-meworky.
  []
 
 
-Overfull \hbox (2.99017pt too wide) in paragraph at lines 1085--1086
+Overfull \hbox (2.99017pt too wide) in paragraph at lines 1101--1102
 \T1/lmr/m/n/12 ƒím více jsou tech-no-lo-gie mezi se-bou pod-po-ro-vané, tím víc
 e vý-vo-já°i usnadní
  []
@@ -1680,183 +1703,200 @@ ngmagazine\OML/lmm/m/it/12 :\T1/lmtt/m/n/12 com / 2009 / 06 / 02 / fixed -[] vs
  []
 
 [45]
-Underfull \hbox (badness 1117) in paragraph at lines 57--59
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+[]\T1/lmr/m/n/12 K°íº, J.: \T1/lmr/m/it/12 Vlastní Latte makra (ma-cros)\T1/lmr
+/m/n/12 . 2013. Do-stupné
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+\T1/lmr/m/n/12 z: []$\T1/lmtt/m/n/12 <[]https : / / github\OML/lmm/m/it/12 :\T1
+/lmtt/m/n/12 com / Venne / venne -[] docs / blob / master /
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 61--63
 []\T1/lmr/m/n/12 Otto, M.; Chewing, F.: \T1/lmr/m/it/12 Bo-ot-strap\T1/lmr/m/n/
 12 . 2012. Do-stupné z: []$\T1/lmtt/m/n/12 <[]http : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 \T1/lmtt/m/n/12 mobile -[] now -[] accounts -[] for -[] 10 -[] of -[] internet 
 -[] usage -[] worldwide -[]
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 74--76
+Underfull \hbox (badness 1715) in paragraph at lines 78--80
 []\T1/lmr/m/n/12 Smith, N.: \T1/lmr/m/it/12 Sty-lus\T1/lmr/m/n/12 . Do-stupné z
 : []$\T1/lmtt/m/n/12 <[]http : / / learnboost\OML/lmm/m/it/12 :\T1/lmtt/m/n/12 
 github\OML/lmm/m/it/12 :\T1/lmtt/m/n/12 io /
  []
 
-) [46] <images/image04.png, id=748, 566.115pt x 144.54pt>
+) [46] <images/image04.png, id=913, 566.115pt x 144.54pt>
 File: images/image04.png Graphic file (type png)
 
 <use images/image04.png>
-Package pdftex.def Info: images/image04.png used on input line 1099.
+Package pdftex.def Info: images/image04.png used on input line 1115.
 (pdftex.def)             Requested size: 396.2778pt x 101.17729pt.
 
-Overfull \hbox (13.2778pt too wide) in paragraph at lines 1099--1100
+Overfull \hbox (13.2778pt too wide) in paragraph at lines 1115--1116
  [] 
  []
 
-<images/image16.png, id=749, 402.75468pt x 643.6547pt>
+<images/image16.png, id=914, 402.75468pt x 643.6547pt>
 File: images/image16.png Graphic file (type png)
 
 <use images/image16.png>
-Package pdftex.def Info: images/image16.png used on input line 1107.
+Package pdftex.def Info: images/image16.png used on input line 1123.
 (pdftex.def)             Requested size: 281.92635pt x 450.5552pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image19.png, id=750, 613.54219pt x 533.74406pt>
+<images/image19.png, id=915, 613.54219pt x 533.74406pt>
 File: images/image19.png Graphic file (type png)
 
 <use images/image19.png>
-Package pdftex.def Info: images/image19.png used on input line 1116.
+Package pdftex.def Info: images/image19.png used on input line 1132.
 (pdftex.def)             Requested size: 429.47661pt x 373.61829pt.
 
-Overfull \hbox (46.47661pt too wide) in paragraph at lines 1116--1117
+Overfull \hbox (46.47661pt too wide) in paragraph at lines 1132--1133
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image08.png, id=751, 755.07094pt x 502.87875pt>
+<images/image08.png, id=920, 755.07094pt x 502.87875pt>
 File: images/image08.png Graphic file (type png)
 
 <use images/image08.png>
-Package pdftex.def Info: images/image08.png used on input line 1124.
+Package pdftex.def Info: images/image08.png used on input line 1140.
 (pdftex.def)             Requested size: 377.53455pt x 251.43875pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image15.png, id=752, 444.15938pt x 280.79906pt>
+<images/image15.png, id=921, 444.15938pt x 280.79906pt>
 File: images/image15.png Graphic file (type png)
 
 <use images/image15.png>
-Package pdftex.def Info: images/image15.png used on input line 1132.
+Package pdftex.def Info: images/image15.png used on input line 1148.
 (pdftex.def)             Requested size: 444.15828pt x 280.79837pt.
 
-Overfull \hbox (61.15828pt too wide) in paragraph at lines 1132--1133
+Overfull \hbox (61.15828pt too wide) in paragraph at lines 1148--1149
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image11.png, id=753, 551.05875pt x 663.98062pt>
+<images/image11.png, id=922, 551.05875pt x 663.98062pt>
 File: images/image11.png Graphic file (type png)
 
 <use images/image11.png>
-Package pdftex.def Info: images/image11.png used on input line 1140.
+Package pdftex.def Info: images/image11.png used on input line 1156.
 (pdftex.def)             Requested size: 385.73848pt x 464.78326pt.
 
-Overfull \hbox (2.73848pt too wide) in paragraph at lines 1140--1141
+Overfull \hbox (2.73848pt too wide) in paragraph at lines 1156--1157
  [] 
  []
 
-<images/image00.png, id=754, 347.79938pt x 45.92157pt>
+<images/image00.png, id=923, 347.79938pt x 45.92157pt>
 File: images/image00.png Graphic file (type png)
 
 <use images/image00.png>
-Package pdftex.def Info: images/image00.png used on input line 1148.
+Package pdftex.def Info: images/image00.png used on input line 1164.
 (pdftex.def)             Requested size: 347.79852pt x 45.92145pt.
 
-<images/image14.png, id=755, 759.58781pt x 126.4725pt>
+<images/image14.png, id=924, 759.58781pt x 126.4725pt>
 File: images/image14.png Graphic file (type png)
 
 <use images/image14.png>
-Package pdftex.def Info: images/image14.png used on input line 1156.
+Package pdftex.def Info: images/image14.png used on input line 1172.
 (pdftex.def)             Requested size: 379.79297pt x 63.23608pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image03.png, id=756, 572.89032pt x 130.23656pt>
+<images/image03.png, id=925, 572.89032pt x 130.23656pt>
 File: images/image03.png Graphic file (type png)
 
 <use images/image03.png>
-Package pdftex.def Info: images/image03.png used on input line 1164.
+Package pdftex.def Info: images/image03.png used on input line 1180.
 (pdftex.def)             Requested size: 401.0205pt x 91.16496pt.
 
-Overfull \hbox (18.0205pt too wide) in paragraph at lines 1164--1165
+Overfull \hbox (18.0205pt too wide) in paragraph at lines 1180--1181
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image12.png, id=757, 240.65166pt x 198.92876pt>
+<images/image12.png, id=926, 240.65166pt x 198.92876pt>
 File: images/image12.png Graphic file (type png)
 
 <use images/image12.png>
-Package pdftex.def Info: images/image12.png used on input line 1172.
+Package pdftex.def Info: images/image12.png used on input line 1188.
 (pdftex.def)             Requested size: 240.65106pt x 198.92825pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image09.png, id=758, 235.4363pt x 262.25815pt>
+<images/image09.png, id=927, 235.4363pt x 262.25815pt>
 File: images/image09.png Graphic file (type png)
 
 <use images/image09.png>
-Package pdftex.def Info: images/image09.png used on input line 1179.
+Package pdftex.def Info: images/image09.png used on input line 1195.
 (pdftex.def)             Requested size: 235.43571pt x 262.25749pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image23.png, id=759, 470.50781pt x 376.40625pt>
+<images/image23.png, id=928, 470.50781pt x 376.40625pt>
 File: images/image23.png Graphic file (type png)
 
 <use images/image23.png>
-Package pdftex.def Info: images/image23.png used on input line 1186.
+Package pdftex.def Info: images/image23.png used on input line 1202.
 (pdftex.def)             Requested size: 282.30685pt x 225.84547pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image25.png, id=760, 526.96875pt x 358.33875pt>
+<images/image25.png, id=929, 526.96875pt x 358.33875pt>
 File: images/image25.png Graphic file (type png)
 
 <use images/image25.png>
-Package pdftex.def Info: images/image25.png used on input line 1193.
+Package pdftex.def Info: images/image25.png used on input line 1209.
 (pdftex.def)             Requested size: 316.18369pt x 215.0049pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/image27.png, id=761, 603.0028pt x 165.61874pt>
+<images/image27.png, id=930, 603.0028pt x 165.61874pt>
 File: images/image27.png Graphic file (type png)
 
 <use images/image27.png>
-Package pdftex.def Info: images/image27.png used on input line 1202.
+Package pdftex.def Info: images/image27.png used on input line 1218.
 (pdftex.def)             Requested size: 361.80447pt x 99.37201pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./CSS_BP_UTF-8.gls) (./CSS_BP_UTF-8.acr [47
+(./CSS_BP_UTF-8.acr [47
 
- <./images/image04.png>] [48 <./images/image16.png>] [49 <./images/image19.png>
-] [50 <./images/image08.png>]
-[51 <./images/image15.png>] [52 <./images/image11.png>] [53 <./images/image00.p
-ng> <./images/image14.png> <./images/image03.png>] [54 <./images/image12.png> <
-./images/image09.png>] [55 <./images/image23.png> <./images/image25.png>]
-[56 <./images/image27.png>]) [57
+ <./images/image04.png>] [48 <./images/image16.png>]
+[49 <./images/image19.png>] [50 <./images/image08.png>] [51 <./images/image15.p
+ng>] [52 <./images/image11.png>] [53 <./images/image00.png> <./images/image14.p
+ng> <./images/image03.png>] [54 <./images/image12.png> <./images/image09.png>]
+[55 <./images/image23.png> <./images/image25.png>] [56 <./images/image27.png>]
+Overfull \hbox (3.73131pt too wide) in paragraph at lines 5--17
+[]\T1/lmr/m/n/12 (Content Ma-nage-ment Sys-tem) Sys-tém, který slouºí pro správ
+u webo-
+ []
+
+) [57
 
 
 ] [58
@@ -1865,13 +1905,13 @@ ng> <./images/image14.png> <./images/image03.png>] [54 <./images/image12.png> <
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1323.
+(hyperref)                removing `\textasciicaron' on input line 1340.
 
 
 Class memoir Warning: The material used in the headers is too large
 (15.35403pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 1340.
+(in both cases you will find help in the memoir manual). on input line 1357.
 
 [59]
 \tf@toc=\write8
@@ -1883,11 +1923,11 @@ either increase the head height or redesign the header
 \tf@lot=\write10
 \openout10 = `CSS_BP_UTF-8.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1340.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1340.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1357.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1357.
  (./CSS_BP_UTF-8.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1340.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1340.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1357.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1357.
 
 Package rerunfilecheck Info: File `CSS_BP_UTF-8.out' has not changed.
 (rerunfilecheck)             Checksum: 1316145E7C9722FA24AD20CA48FEA9A4;1787.
@@ -1895,18 +1935,21 @@ Package rerunfilecheck Info: File `CSS_BP_UTF-8.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1340.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1357.
  ) 
 Here is how much of TeX's memory you used:
- 14497 strings out of 493488
- 200616 string characters out of 3146893
- 375936 words of memory out of 3000000
- 17248 multiletter control sequences out of 15000+200000
+ 14768 strings out of 493488
+ 204372 string characters out of 3146893
+ 380148 words of memory out of 3000000
+ 17504 multiletter control sequences out of 15000+200000
  96597 words of font info for 74 fonts, out of 3000000 for 9000
  958 hyphenation exceptions out of 8191
- 51i,13n,38p,1533b,487s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
-st, replaced by a fixed one
+ 51i,13n,39p,1533b,510s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.27} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
 
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/
 fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-maths
@@ -1923,10 +1966,10 @@ lic/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></u
 sr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt
 9.pfb>
-Output written on CSS_BP_UTF-8.pdf (73 pages, 1791666 bytes).
+Output written on CSS_BP_UTF-8.pdf (73 pages, 1801949 bytes).
 PDF statistics:
- 934 PDF objects out of 1000 (max. 8388607)
- 795 compressed objects within 8 object streams
- 233 named destinations out of 1000 (max. 500000)
+ 1106 PDF objects out of 1200 (max. 8388607)
+ 961 compressed objects within 10 object streams
+ 251 named destinations out of 1000 (max. 500000)
  352 words of extra memory for PDF output out of 10000 (max. 10000000)
 
