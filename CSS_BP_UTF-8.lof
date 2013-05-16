@@ -10,12 +10,12 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces V\IeC {\'y}sledky v\IeC {\'y}zkumu o~p\IeC {\v r}\IeC {\'\i }stupu na internet z r\IeC {\r u}zn\IeC {\'y}ch za\IeC {\v r}\IeC {\'\i }zen\IeC {\'\i }\cite {dev}}}{11}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Podpora media queries}}{12}{figure.3.4}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Sloupce typu \quotedblbase 123\textquotedblleft \cite {yaml}}}{18}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Alloy UI komponenta}}{22}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces My\IeC {\v s}lenka \IeC {\'u}\IeC {\v c}a\IeC {\v r}\IeC {\'\i }}}{23}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Neuplatn\IeC {\v e}n\IeC {\'a} my\IeC {\v s}lenka \IeC {\'u}\IeC {\v c}a\IeC {\v r}\IeC {\'\i }}}{24}{figure.4.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Sloupce typu \quotedblbase 123\textquotedblleft \cite {yaml}}}{19}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Alloy UI komponenta}}{23}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces My\IeC {\v s}lenka \IeC {\'u}\IeC {\v c}a\IeC {\v r}\IeC {\'\i }}}{24}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Neuplatn\IeC {\v e}n\IeC {\'a} my\IeC {\v s}lenka \IeC {\'u}\IeC {\v c}a\IeC {\v r}\IeC {\'\i }}}{25}{figure.4.4}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Uk\IeC {\'a}zka upozorn\IeC {\v e}n\IeC {\'\i } preprocesoru Less}}{36}{figure.5.1}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Uk\IeC {\'a}zka upozorn\IeC {\v e}n\IeC {\'\i } preprocesoru LESS}}{36}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Uk\IeC {\'a}zka upozorn\IeC {\v e}n\IeC {\'\i } preprocesoru Stylus}}{36}{figure.5.2}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Uk\IeC {\'a}zka upozorn\IeC {\v e}n\IeC {\'\i } preprocesoru Sass}}{36}{figure.5.3}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Interaktivn\IeC {\'\i } m\IeC {\'o}d preprocesoru Stylus}}{38}{figure.5.4}
@@ -35,4 +35,5 @@
 \contentsline {figure}{\numberline {A.12}{\ignorespaces Horizont\IeC {\'a}ln\IeC {\'\i } banner}}{55}{figure.A.12}
 \contentsline {figure}{\numberline {A.13}{\ignorespaces Komponenta: Reklamn\IeC {\'\i } bannery fixn\IeC {\v e} pod\IeC {\'e}l layoutu vlevo a~vpravo.}}{55}{figure.A.13}
 \contentsline {figure}{\numberline {A.14}{\ignorespaces Uk\IeC {\'a}zka responzivn\IeC {\'\i } reklamy}}{56}{figure.A.14}
+\addvspace {10pt}
 \addvspace {10pt}

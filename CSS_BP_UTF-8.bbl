@@ -11,78 +11,77 @@
 \bibitem{typo1}
 Bacci, M.: Basic Typography Rules for a Well Designed Website. [cit.
   2013-05-05].
-\urlprefix\biburl{http://www.grokdotcom.com/2012/11/07/basic-typography-rules-for-a-well-designed-website/}
-
-\bibitem{typo2}
-Bringhurst, R.: \emph{The Elements of Typographic Style Applied to the Web}.
-  2010, [cit. 2013-04-29].
-\urlprefix\biburl{http://webtypography.net/}
+\urlprefix\biburl{<http://www.grokdotcom.com/2012/11/07/basic-typography-rules-for-a-well-designed-website/>}
 
 \bibitem{bas}
 Brunborg, E.: CSS Baseline: The Good, The Bad And The Ugly. 2012, [cit.
   2013-05-02].
-\urlprefix\biburl{http://coding.smashingmagazine.com/2012/12/17/css-baseline-the-good-the-bad-and-the-ugly/}
+\urlprefix\biburl{<http://coding.smashingmagazine.com/2012/12/17/css-baseline-the-good-the-bad-and-the-ugly/>}
 
 \bibitem{sass}
 Catlin, H.; Weizenbaum, N.; Eppstein, C.: \emph{Syntactically Awesome
   Stylesheets}.
-\urlprefix\biburl{http://sass-lang.com/}
+\urlprefix\biburl{<http://sass-lang.com/>}
 
 \bibitem{bs}
 Curzi, S.: \emph{Baseline - a designer framework by Stephanecurzi.me}. 2011.
-\urlprefix\biburl{http://baselinecss.com/}
+\urlprefix\biburl{<http://baselinecss.com/>}
 
 \bibitem{fram}
 IAC/InterActiveCorp: \emph{Definition: CSS Framework}. [cit. 2013-03-24].
-\urlprefix\biburl{http://webdesign.about.com/od/cssglossary/g/css_framework.htm}
+\urlprefix\biburl{<http://webdesign.about.com/od/cssglossary/g/css_framework.htm>}
 
 \bibitem{yaml}
 Jesse, D.: \emph{YAML CSS framework}.
-\urlprefix\biburl{http://www.yaml.de/}
+\urlprefix\biburl{<http://www.yaml.de/>}
 
 \bibitem{adapt}
 Knight, K.: Adaptive CSS-Layouts: New Era In Fluid Layouts? 2009, [cit.
   2013-03-24].
-\urlprefix\biburl{http://coding.smashingmagazine.com/2009/06/09/smart-fixes-for-fluid-layouts/}
+\urlprefix\biburl{<http://coding.smashingmagazine.com/2009/06/09/smart-fixes-for-fluid-layouts/>}
 
 \bibitem{fix}
 Knight, K.: Fixed vs. Fluid vs. Elastic Layout: What’s The Right One For You?
   2009, [cit. 2013-03-24].
-\urlprefix\biburl{http://coding.smashingmagazine.com/2009/06/02/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/}
+\urlprefix\biburl{<http://coding.smashingmagazine.com/2009/06/02/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/>}
 
 \bibitem{res}
-Marcotte, E.: \emph{Responsive Web Design}. 2011, [cit. 2013-03-24].
-\urlprefix\biburl{http://www.alistapart.com/articles/responsive-web-design/}
+Marcotte, E.: \emph{Responsive Web Design}. Jeffrey Zeldman, 2011, ISBN
+  978-0-9844425-7-7, [cit. 2013-03-24].
+
+\bibitem{bas2}
+Miner, W.: Setting Type on the Web to a Baseline Grid. 2007, [cit. 2013-05-10].
+\urlprefix\biburl{<http://alistapart.com/article/settingtypeontheweb>}
 
 \bibitem{boot}
 Otto, M.; Chewing, F.: \emph{Bootstrap}. 2012.
-\urlprefix\biburl{http://twitter.github.io/bootstrap/}
+\urlprefix\biburl{<http://twitter.github.io/bootstrap/>}
 
 \bibitem{dev2}
 Russell, J.: Mobile now accounts for 10% of Internet usage worldwide, double
   that of 2010: report. [cit. 2013-04-28].
-\urlprefix\biburl{http://thenextweb.com/mobile/2012/05/09/mobile-now-accounts-for-10-of-internet-usage-worldwide-double-that-of-2010-report/}
+\urlprefix\biburl{<http://thenextweb.com/mobile/2012/05/09/mobile-now-accounts-for-10-of-internet-usage-worldwide-double-that-of-2010-report/>}
 
 \bibitem{less}
 Sellier, A.: \emph{The Dynamic Stylesheet language}.
-\urlprefix\biburl{http://lesscss.org/}
+\urlprefix\biburl{<http://lesscss.org/>}
 
 \bibitem{gs}
 Smith, N.: \emph{960 Grid System}.
-\urlprefix\biburl{http://960.gs/}
+\urlprefix\biburl{<http://960.gs/>}
 
 \bibitem{stylus}
 Smith, N.: \emph{Stylus}.
-\urlprefix\biburl{http://learnboost.github.io/stylus/}
+\urlprefix\biburl{<http://learnboost.github.io/stylus/>}
 
 \bibitem{dev}
 Sterling, G.: Study: 69 Percent Access The Mobile Internet Daily. [cit.
   2013-04-22].
-\urlprefix\biburl{http://marketingland.com/study-69-percent-access-the-mobile-internet-daily-4371}
+\urlprefix\biburl{<http://marketingland.com/study-69-percent-access-the-mobile-internet-daily-4371>}
 
 \bibitem{mqsup}
 Sumner, G.: How many web browsers support responsive design? [cit. 2013-04-12].
-\urlprefix\biburl{http://gabesumner.com/how-many-web-browsers-support-responsive-design}
+\urlprefix\biburl{<http://gabesumner.com/how-many-web-browsers-support-responsive-design>}
 
 \bibitem{css}
 WWW Consorcium: \emph{Cascading Style Sheets}. [cit. 2013-03-24].
@@ -90,6 +89,11 @@ WWW Consorcium: \emph{Cascading Style Sheets}. [cit. 2013-03-24].
 
 \bibitem{mq}
 WWW Consorcium: \emph{Media Queries}. [cit. 2013-03-24].
-\urlprefix\biburl{http://www.w3.org/TR/css3-mediaqueries/}
+\urlprefix\biburl{<http://www.w3.org/TR/css3-mediaqueries/>}
+
+\bibitem{wcag}
+WWW Consorcium: \emph{Web Content Accessibility Guidelines (WCAG) 2.0}. [cit.
+  2013-05-15].
+\urlprefix\biburl{<http://www.w3.org/TR/WCAG20/>}
 
 \end{thebibliography}
